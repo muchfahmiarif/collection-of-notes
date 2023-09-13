@@ -2,5 +2,13 @@
   "docs": {
     "title": "Documentation",
     "type": "page"
+  },
+  "tutorial": {
+    "title": "Tutorial",
+    "type": "page"
+  },
+  "library": {
+    "title": "Library",
+    "type": "page"
   }
 }

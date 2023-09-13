@@ -1,0 +1,18 @@
+{
+  "index": {
+    "title": "Introduction",
+    "theme": {
+      "breadcrumb": false
+    }
+  },
+  "-": {
+    "type": "separator",
+    "title": "Services"
+  },
+  "authentication": {
+    "title": "Authentication"
+  },
+  "database": {
+    "title": "Database"
+  }
+}

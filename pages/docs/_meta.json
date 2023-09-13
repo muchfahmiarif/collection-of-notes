@@ -1,1 +1,8 @@
-{}
+{
+  "index": {
+    "title": "Introduction",
+    "theme": {
+      "breadcrumb": false
+    }
+  }
+}

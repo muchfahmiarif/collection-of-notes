@@ -1,0 +1,142 @@
+# Linux OS
+
+## Ubuntu with dual boot
+
+Step by step guide to install Ubuntu with dual boot on a Windows 10 machine.
+
+1. Download semua bahan
+2. Buat bootable USB dengan Rufus
+3. Buat partisi baru di Windows
+4. Install Ubuntu
+
+### Download semua bahan
+
+- Yang pertama buka link ubuntu [disini](https://ubuntu.com/download/desktop) dan download versi ubuntu yang ingin di download. Untuk tutorial ini saya menggunakan ubuntu 20.04 LTS.
+- Download Rufus [disini](https://rufus.ie/). Pada tutorial ini saya menggunakan Rufus portable
+
+### Buat bootable USB dengan Rufus
+
+1. Pasang flashdisk yang akan digunakan untuk bootable USB
+2. Buka aplikasi Rufus yang sudah di download dan pilih flashdisk yang akan digunakan
+3. Pada bagian `Boot selection` klik `SELECT` dan pilih file iso ubuntu yang sudah di download
+4. Pada bagian `Partision scheme` pilih sesuai partision scheme sesuai yang ada pada hardisk yang akan digunakan untuk dual boot.
+5. Cara cek type partision scheme yaitu dengan klik kanan pada logo windows di taskbar
+6. pilih `Disk Management`. Pilih `Disk` yang akan digunakan untuk dual boo.
+7. Klik kanan pada `Disk x` dan pilih `Properties`. Pada bagian `Volumes` terdapat `Partision style` yang menunjukkan type partision scheme yang digunakan.
+8. Klik `START` pada aplikasi Rufus untuk memulai proses pembuatan bootable USB
+9. Pilih `write in ISO image mode (Recommended)` dan klik `OK`
+10. Tunggu hingga proses pembuatan bootable USB selesai
+11. Akan muncul notifikasi `READY` jika proses pembuatan bootable USB sudah selesai
+
+### Buat partisi baru di Windows
+
+Membuat partisi di windows dapat menggunakan aplikasi atau tidak. Pada tutorial ini saya menggunakan aplikasi bawaan windows yaitu `Disk Management`
+
+1. Klik kanan pada logo windows di taskbar dan pilih `Disk Management`
+2. Pilih `Disk` yang akan digunakan untuk dual boot
+3. Klik kanan pada `Disk x` dan pilih `Shrink Volume`
+4. Masukkan ukuran partisi yang akan dibuat. Ukuran partisi yang dibuat harus lebih besar dari ukuran file iso ubuntu yang sudah di download
+5. Klik `Shrink` dan tunggu hingga proses shrink selesai
+6. Akan muncul partisi baru dengan nama `Unallocated`
+
+### Install Ubuntu
+
+1. Pasang flashdisk yang sudah dibuat bootable USB
+2. Restart komputer dan masuk ke BIOS
+3. Cari menu `boot configuration` dan ubah boot priority menjadi bootable USB
+4. Jika muncul modal, pilih `UEFI: <nama flashdisk>` jika partision scheme yang digunakan adalah GPT atau pilih `<nama flashdisk>` jika partision scheme yang digunakan adalah MBR
+5. Pastikan boot option kedua adalah `windows boot manager`
+6. Save configuration BIOS dan restart komputer
+7. Setelah keluar pilihan menu login, pilih `Ubuntu`
+8. Akan masuk ke menu instalasi ubuntu
+
+### Configuration Ubuntu
+
+1. Pilih bahasa yang akan digunakan, klik `Install Ubuntu`
+2. Pilih bahasa keyboard yang akan digunakan, klik `Continue`
+3. Jika terdapat menu pilihan untuk koneksi ke internet, pilih nama wifi yang tersedia jika menggunakan kabel tanpa perlu pilih nama wifi, klik `Continue`
+4. Pilih `Normal installation` dan centang pada bagian other option `Download updates while installing Ubuntu` dan `Install third-party software for graphics and Wi-Fi hardware and additional media formats`, klik `Continue`
+5. Secara otomatis ubuntu membaca adanya windows yang sudah terinstall
+6. Dengan adanya menu pilihan `Install Ubuntu alongside Windows Boot Manager` dikarenakan `partision scheme` sesuai dengan hardisk yang digunakan
+7. Jika ingin membuat partisi manual, pilih `Something else` dan klik `Continue` <mark>Recommended</mark>
+
+### Manual Partision
+
+Secara garis besar partision pada ubuntu dibagi menjadi 3 besar yaitu :
+
+- Swap partision
+- Root partision
+- Home partision
+
+Ada 1 partision yang dianjurkan untuk di setting secara manual yaitu Boot Partision. Namun pada tutorial ini saya tidak menggunakan Boot Partision.
+
+#### Swap Partision
+
+Swap partision digunakan untuk menyimpan data dimana kondisi kapasitas RAM sudah penuh. Swap partision dibuat dengan ukuran 2 kali ukuran RAM yang digunakan.
+
+Berikuti langkah - langkah untuk membuat swap partision :
+
+1. Pilih `Free space` yang ada pada hardisk yang akan digunakan untuk ubuntu
+2. Klik `+` pada bagian bawah
+3. Pada bagian `Size` masukkan ukuran partisi yang akan dibuat. Ukuran partisi yang dibuat harus lebih besar dari ukuran RAM yang digunakan
+4. Pada bagian `Type for the new partition` pilih `Primary`
+5. Pada bagian `Location for the new partition` pilih `Beginning of this space`
+6. Pada bagian `Use as` pilih `swap area`
+7. Setelah selesai klik `OK`
+
+#### Root Partision
+
+Root partision digunakan untuk menyimpan data sistem operasi ubuntu. Jika di windows root partision adalah `C:\` maka di ubuntu root partision adalah `/`
+
+Berikuti langkah - langkah untuk membuat root partision :
+
+1. Pilih `Free space` yang ada pada hardisk yang akan digunakan untuk ubuntu
+2. Klik `+` pada bagian bawah
+3. Pada bagian `Size` masukkan ukuran partisi yang akan dibuat.
+4. Pada bagian `Type for the new partition` pilih `Primary`
+5. Pada bagian `Location for the new partition` pilih `Beginning of this space`
+6. Pada bagian `Use as` pilih `Ext4 journaling file system`
+7. Pada bagian `Mount point` pilih `/`
+8. Setelah selesai klik `OK`
+
+#### Home Partision
+
+Home partision digunakan untuk menyimpan data pengguna ubuntu. Jika di windows home partision adalah `D:\` maka di ubuntu home partision adalah `/home`
+
+Berikuti langkah - langkah untuk membuat home partision :
+
+1. Pilih `Free space` yang ada pada hardisk yang akan digunakan untuk ubuntu
+2. Klik `+` pada bagian bawah
+3. Pada bagian `Size` masukkan ukuran partisi yang akan dibuat.
+4. Pada bagian `Type for the new partition` pilih `Primary`
+5. Pada bagian `Location for the new partition` pilih `Beginning of this space`
+6. Pada bagian `Use as` pilih `Ext4 journaling file system`
+7. Pada bagian `Mount point` pilih `/home`
+8. Setelah selesai klik `OK`
+
+#### Boot Partision
+
+Boot partision digunakan untuk menyimpan data booting sistem operasi ubuntu. Boot partision dibuat dengan ukuran 1 GB.
+
+Berikuti langkah - langkah untuk membuat boot partision :
+
+1. Pilih `Free space` yang ada pada hardisk yang akan digunakan untuk ubuntu
+2. Klik `+` pada bagian bawah
+3. Pada bagian `Size` masukkan ukuran partisi yang akan dibuat. Ukuran partisi yang dibuat harus lebih besar dari ukuran RAM yang digunakan
+4. Pada bagian `Type for the new partition` pilih `Primary`
+5. Pada bagian `Location for the new partition` pilih `Beginning of this space`
+6. Pada bagian `Use as` pilih `Ext4 journaling file system`
+7. Pada bagian `Mount point` pilih `/boot`
+8. Setelah selesai klik `OK`
+
+### Finishing Configuration Manual Partision
+
+1. **Sebelum kalian klik** tombol `Install Now` pastikan pada bagian `Device for boot loader installation` pilih sesuai dengan Device yang digunakan
+   pada Root Partision. Jika tidak sesuai maka akan terjadi error saat proses booting.
+2. Klik `Install Now`
+3. Pilih lokasi anda, klik `Continue`
+4. Masukkan nama pengguna, nama komputer, nama pengguna, dan password. Centang pada bagian `Log in automatically` jika ingin masuk ke ubuntu tanpa memasukkan password. Klik `Continue`
+5. Tunggu hingga proses instalasi selesai
+6. Jika sudah selesai akan muncul modal untuk restart komputer. Klik `Restart Now`
+7. Setelah komputer menyala, akan ada perintah untuk melepas flashdisk.
+8. Lepaskan flashdisk dan klik `Enter`
