@@ -1,3 +1,5 @@
+import Navbar from "@/components/navbar/menu-2.navbar";
+import { NavigationMenuDemo } from "@/components/navbar/menu.navbar";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -6,7 +8,15 @@ export default function Home() {
       <div className="bg-slate-800 w-full mx-6 md:mx-40 justify-center flex">
         <div>
           <h1 className="text-black">Hello World</h1>
-          <Button>Click me</Button>
+          <Button
+            onClick={() => {
+              location.href = "/docs";
+            }}>
+            Click me
+          </Button>
+          {/* <Navbar />
+          <NavigationMenuDemo /> */}
+          <div className="min-h-screen"></div>
         </div>
       </div>
     </div>
