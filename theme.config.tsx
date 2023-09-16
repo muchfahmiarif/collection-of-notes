@@ -67,6 +67,8 @@ const themeConfig: DocsThemeConfig = {
   // Sidebar
   sidebar: {
     defaultMenuCollapseLevel: 1,
+    autoCollapse: true,
+    toggleButton: true,
   },
 
   // Table of Contents
