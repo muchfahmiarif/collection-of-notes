@@ -1,54 +1,19 @@
 import React from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "../ui/card";
+import { Data } from "@/public/data/authentication";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const CardAuth = () => {
-  const Data = [
-    {
-      id: 1,
-      name: "Auth0",
-      url: "https://auth0.com/",
-    },
-    {
-      id: 2,
-      name: "Firebase",
-      url: "https://firebase.google.com/",
-    },
-    {
-      id: 3,
-      name: "Next Auth",
-      url: "https://next-auth.js.org/",
-    },
-    {
-      id: 4,
-      name: "Supabase",
-      url: "https://supabase.io/",
-    },
-    {
-      id: 5,
-      name: "AWS Amplify",
-      url: "https://aws.amazon.com/amplify/",
-    },
-    {
-      id: 6,
-      name: "Clerk",
-      url: "https://clerk.dev/",
-    },
-    {
-      id: 7,
-      name: "Permit",
-      url: "https://www.permit.io/",
-    },
-  ];
-
   return (
     <>
       <div className="flex flex-wrap gap-4">
         {Data.map((item) => (
-          <Card key={item.id} className="bg-[#111]">
-            <CardContent>
-              <a href={item.url}>{item.name}</a>
-            </CardContent>
-          </Card>
+          <Link href={item.url} key={item.id}>
+            <Card className={cn(`bg-[#111] hover:bg-neutral-900 border-white/10 hover:border-white/25`)}>
+              <CardContent>{item.name}</CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </>
