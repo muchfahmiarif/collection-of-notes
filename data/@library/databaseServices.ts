@@ -8,6 +8,9 @@ import Firebase from "@/public/images/library/database/firebase.svg";
 import Planetscale from "@/public/images/library/database/planetscale.svg";
 import Upstash from "@/public/images/library/database/upstash.svg";
 import Cockroachlabs from "@/public/images/library/database/cockroachlabs.svg";
+import Supabase from "@/public/images/library/database/supabase.svg";
+import Neon from "@/public/images/library/database/neon.svg";
+import Xata from "@/public/images/library/database/butterfly-fill.svg";
 
 export const Data = [
   {
@@ -27,7 +30,7 @@ export const Data = [
   {
     id: 3,
     name: "Firebase",
-    url: "https://firebase.google.com/",
+    url: "https://firebase.google.com/docs/database",
     icon: SiFirebase,
     image: Firebase,
   },
@@ -36,7 +39,7 @@ export const Data = [
     name: "Supabase",
     url: "https://supabase.io/",
     icon: SiSupabase,
-    image: FacebookImage,
+    image: Supabase,
   },
   {
     id: 5,
@@ -50,7 +53,7 @@ export const Data = [
     name: "Neon Tech",
     url: "https://neon.tech/",
     icon: HiDatabase,
-    image: FacebookImage,
+    image: Neon,
   },
   {
     id: 7,
@@ -64,7 +67,7 @@ export const Data = [
     name: "Xata",
     url: "https://xata.io/",
     icon: PiButterflyFill,
-    image: FacebookImage,
+    image: Xata,
   },
   {
     id: 9,

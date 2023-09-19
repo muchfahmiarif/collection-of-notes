@@ -22,7 +22,7 @@ export const Data = [
   {
     id: 2,
     name: "Firebase",
-    url: "https://firebase.google.com/",
+    url: "https://firebase.google.com/docs/auth",
     icon: SiFirebase,
     image: Firebase,
   },

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Warning from "@/public/images/seal-warning-fill.svg";
 
 interface CardsProps {
   data: {
@@ -29,7 +30,7 @@ const Cards: React.FC<CardsProps> = ({ data }) => {
         {data.map((item) => (
           <Link href={item.url} key={item.id} target="_blank" className="">
             <div
-              className="group border border-white/10 px-20 h-14 rounded-lg flex flex-wrap hover:border-white/25 dark:hover:bg-neutral-900 hover:bg-neutral-100 relative overflow-hidden justify-center items-center content-center duration-300"
+              className="group border border-neutral-300 dark:border-white/10 px-20 h-14 rounded-lg flex flex-wrap hover:border-neutral-300 hover:shadow-md dark:hover:border-white/25 dark:hover:bg-neutral-900 hover:bg-neutral-100 relative overflow-hidden justify-center items-center content-center duration-300"
               onMouseOver={() => handleHover(item.id)}
               onMouseLeave={handleMouseLeave}>
               {isHover === item.id && (
