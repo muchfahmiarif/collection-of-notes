@@ -2,6 +2,12 @@ import { SiFauna, SiFirebase, SiMongodb, SiSupabase, SiPlanetscale, SiUpstash, S
 import { HiDatabase } from "react-icons/hi";
 import { PiButterflyFill } from "react-icons/pi";
 import FacebookImage from "@/public/images/facebook.svg";
+import MongoDB from "@/public/images/library/database/mongodb.svg";
+import Fauna from "@/public/images/library/database/fauna.svg";
+import Firebase from "@/public/images/library/database/firebase.svg";
+import Planetscale from "@/public/images/library/database/planetscale.svg";
+import Upstash from "@/public/images/library/database/upstash.svg";
+import Cockroachlabs from "@/public/images/library/database/cockroachlabs.svg";
 
 export const Data = [
   {
@@ -9,21 +15,21 @@ export const Data = [
     name: "Mongo DB",
     url: "https://www.mongodb.com/",
     icon: SiMongodb,
-    image: FacebookImage,
+    image: MongoDB,
   },
   {
     id: 2,
     name: "Fauna",
     url: "https://fauna.com/",
     icon: SiFauna,
-    image: FacebookImage,
+    image: Fauna,
   },
   {
     id: 3,
     name: "Firebase",
     url: "https://firebase.google.com/",
     icon: SiFirebase,
-    image: FacebookImage,
+    image: Firebase,
   },
   {
     id: 4,
@@ -37,7 +43,7 @@ export const Data = [
     name: "Planetscale",
     url: "https://planetscale.com/",
     icon: SiPlanetscale,
-    image: FacebookImage,
+    image: Planetscale,
   },
   {
     id: 6,
@@ -51,7 +57,7 @@ export const Data = [
     name: "Upstash",
     url: "https://upstash.com/",
     icon: SiUpstash,
-    image: FacebookImage,
+    image: Upstash,
   },
   {
     id: 8,
@@ -65,7 +71,7 @@ export const Data = [
     name: "Cockroach DB",
     url: "https://www.cockroachlabs.com/",
     icon: SiCockroachlabs,
-    image: FacebookImage,
+    image: Cockroachlabs,
   },
   {
     id: 10,
