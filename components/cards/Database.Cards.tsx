@@ -6,14 +6,14 @@ import facebookImages from "@/public/images/facebook.svg";
 import Image from "next/image";
 
 const DatabaseCards = () => {
-  const [isHover, setIsHover] = React.useState(false);
+  const [isHover, setIsHover] = React.useState(null);
 
-  const handleHover = () => {
-    setIsHover(true);
+  const handleHover = (index: any) => {
+    setIsHover(index);
   };
 
   const handleMouseLeave = () => {
-    setIsHover(false);
+    setIsHover(null);
   };
 
   return (
@@ -23,9 +23,9 @@ const DatabaseCards = () => {
           <Link href={item.url} key={item.id} target="_blank" className="">
             <div
               className="group border border-white/10 px-20 h-14 rounded-lg flex flex-wrap hover:border-white/25 relative overflow-hidden justify-center items-center content-center"
-              onMouseOver={handleHover}
+              onMouseOver={() => handleHover(item.id)}
               onMouseLeave={handleMouseLeave}>
-              {isHover && (
+              {isHover === item.id && (
                 <Image
                   src={facebookImages}
                   alt="Facebook Images"
