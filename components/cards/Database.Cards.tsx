@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from "@/data/@library/databaseServices";
+import { Data } from "@/data/@library/database.services";
 import Link from "next/link";
 import Image from "next/image";
 

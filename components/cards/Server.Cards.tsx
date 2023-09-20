@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "../Cards";
-import { dataServer } from "@/data/@library/server.service";
+import { dataServer } from "@/data/@library/server.services";
 
 const ServerCards = () => {
   return (

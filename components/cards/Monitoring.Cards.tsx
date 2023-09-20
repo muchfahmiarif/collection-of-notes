@@ -1,4 +1,4 @@
-import { dataMonitoring } from "@/data/@library/monitoring.service";
+import { dataMonitoring } from "@/data/@library/monitoring.services";
 import React from "react";
 import Cards from "../Cards";
 
