@@ -1,12 +1,16 @@
 import React from "react";
-import Cards3 from "../Cards-legacy";
-import { data } from "@/data/@library/serverService";
+import Cards from "../Cards";
+import { dataServer } from "@/data/@library/server.service";
 
 const ServerCards = () => {
   return (
-    <div>
-      <Cards3 data={data}></Cards3>
-    </div>
+    <>
+      <div className="grid grid-cols-3 gap-4 my-4">
+        {dataServer.map((item) => (
+          <Cards item={item} key={item.id} />
+        ))}
+      </div>
+    </>
   );
 };
 

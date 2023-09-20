@@ -18,15 +18,17 @@ export type ServerService = {
   url: string;
   icon: string;
   image: string;
+  tags: string[];
 };
 
-export const data: ServerService[] = [
+export const dataServer: ServerService[] = [
   {
     id: 1,
     name: "Vercel",
     url: "https://vercel.com",
     icon: SiVercel,
     image: Vercel,
+    tags: ["nodejs", "api", "serverless", "ci-cd"],
   },
   {
     id: 2,
@@ -34,6 +36,7 @@ export const data: ServerService[] = [
     url: "https://netlify.com",
     icon: SiNetlify,
     image: Netlify,
+    tags: ["nodejs", "api", "serverless"],
   },
   {
     id: 3,
@@ -41,6 +44,7 @@ export const data: ServerService[] = [
     url: "https://qovery.com",
     icon: TbHexagon3D,
     image: Qovery,
+    tags: ["AWS"],
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ export const data: ServerService[] = [
     url: "https://railway.app",
     icon: SiRailway,
     image: Railway,
+    tags: ["laravel", "nodejs", "api", "serverless"],
   },
   {
     id: 5,
@@ -55,6 +60,7 @@ export const data: ServerService[] = [
     url: "https://render.com",
     icon: SiRender,
     image: Render,
+    tags: ["database", "docker", "nodejs", "api"],
   },
   {
     id: 6,
@@ -62,6 +68,7 @@ export const data: ServerService[] = [
     url: "https://cyclic.sh",
     icon: CgServerless,
     image: Cyclic,
+    tags: ["serverless", "nodejs", "python", "go"],
   },
   {
     id: 7,
@@ -69,6 +76,7 @@ export const data: ServerService[] = [
     url: "https://fly.io",
     icon: CgServerless,
     image: FlyIo,
+    tags: ["vm", "nodejs", "elixir", "rails", "python", "go"],
   },
   {
     id: 8,
@@ -76,6 +84,7 @@ export const data: ServerService[] = [
     url: "https://www.bigdatacloud.com",
     icon: AiOutlineCloudServer,
     image: BigDataCloud,
+    tags: ["api"],
   },
   {
     id: 9,
@@ -83,5 +92,6 @@ export const data: ServerService[] = [
     url: "https://www.koyeb.com",
     icon: SiKoyeb,
     image: Koyeb,
+    tags: ["api", "workers"],
   },
 ];
