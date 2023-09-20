@@ -1,13 +1,13 @@
-import { data } from "@/data/@library/monitoring.service";
+import { dataMonitoring } from "@/data/@library/monitoring.service";
 import React from "react";
-import Cards2 from "../Cards2";
+import Cards from "../Cards";
 
 const MonitoringCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {data.map((item) => (
-          <Cards2 item={item} key={item.id} />
+        {dataMonitoring.map((item) => (
+          <Cards item={item} key={item.id} />
         ))}
       </div>
     </>

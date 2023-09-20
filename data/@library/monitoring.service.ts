@@ -15,7 +15,7 @@ export type MonitoringProps = {
   image: string;
 };
 
-export const data: MonitoringProps[] = [
+export const dataMonitoring: MonitoringProps[] = [
   {
     id: 1,
     name: "Hotjar",
