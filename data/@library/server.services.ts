@@ -11,17 +11,9 @@ import Cyclic from "@/public/images/library/server/cyclic.svg";
 import FlyIo from "@/public/images/library/server/logo.svg";
 import BigDataCloud from "@/public/images/library/server/bigDataCloud.svg";
 import Koyeb from "@/public/images/library/server/koyeb.svg";
+import { libraryProps } from "@/types/library.type";
 
-export type ServerService = {
-  id: number;
-  name: string;
-  url: string;
-  icon: string;
-  image: string;
-  tags: string[];
-};
-
-export const dataServer: ServerService[] = [
+export const dataServer: libraryProps[] = [
   {
     id: 1,
     name: "Vercel",

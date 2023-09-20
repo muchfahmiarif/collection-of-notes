@@ -10,14 +10,16 @@ import AWSAmplify from "@/public/images/library/authentication/awsamplify.svg";
 import Clerk from "@/public/images/library/authentication/clerk-logomark-light.svg";
 import Permit from "@/public/images/library/authentication/permit.svg";
 import Passport from "@/public/images/library/authentication/passport.svg";
+import { libraryProps } from "@/types/library.type";
 
-export const Data = [
+export const dataAuthentication: libraryProps[] = [
   {
     id: 1,
     name: "Auth0",
     url: "https://auth0.com/",
     icon: SiAuth0,
     image: Auth0,
+    tags: [],
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ export const Data = [
     url: "https://firebase.google.com/docs/auth",
     icon: SiFirebase,
     image: Firebase,
+    tags: [],
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ export const Data = [
     url: "https://next-auth.js.org/",
     icon: BsFillShieldLockFill,
     image: NextAuth,
+    tags: [],
   },
   {
     id: 4,
@@ -39,6 +43,7 @@ export const Data = [
     url: "https://supabase.com/auth",
     icon: SiSupabase,
     image: Supabase,
+    tags: [],
   },
   {
     id: 5,
@@ -46,6 +51,7 @@ export const Data = [
     url: "https://aws.amazon.com/amplify/",
     icon: SiAwsamplify,
     image: AWSAmplify,
+    tags: [],
   },
   {
     id: 6,
@@ -53,6 +59,7 @@ export const Data = [
     url: "https://clerk.dev/",
     icon: FaCircleUser,
     image: Clerk,
+    tags: [],
   },
   {
     id: 7,
@@ -60,6 +67,7 @@ export const Data = [
     url: "https://www.permit.io/",
     icon: PiDogFill,
     image: Permit,
+    tags: [],
   },
   {
     id: 8,
@@ -67,5 +75,6 @@ export const Data = [
     url: "http://www.passportjs.org/",
     icon: SiPassport,
     image: Passport,
+    tags: [],
   },
 ];

@@ -6,17 +6,9 @@ import Sentry from "@/public/images/library/monitoring/sentry.svg";
 import Datadog from "@/public/images/library/monitoring/datadog.svg";
 import Grafana from "@/public/images/library/monitoring/grafana.svg";
 import Checkmk from "@/public/images/library/monitoring/checkmk.svg";
+import { libraryProps } from "@/types/library.type";
 
-export type MonitoringProps = {
-  id: number;
-  name: string;
-  url: string;
-  icon: string;
-  image: string;
-  tags: string[];
-};
-
-export const dataMonitoring: MonitoringProps[] = [
+export const dataMonitoring: libraryProps[] = [
   {
     id: 1,
     name: "Hotjar",
