@@ -1,5 +1,5 @@
 import React from "react";
-import Cards3 from "../Cards3";
+import Cards3 from "../Cards-legacy";
 import { data } from "@/data/@library/serverService";
 
 const ServerCards = () => {

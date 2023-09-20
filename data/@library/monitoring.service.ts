@@ -13,7 +13,7 @@ export type MonitoringProps = {
   url: string;
   icon: string;
   image: string;
-  tags?: string[];
+  tags: string[];
 };
 
 export const dataMonitoring: MonitoringProps[] = [
