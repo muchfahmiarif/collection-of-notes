@@ -13,6 +13,7 @@ export type MonitoringProps = {
   url: string;
   icon: string;
   image: string;
+  tags?: string[];
 };
 
 export const dataMonitoring: MonitoringProps[] = [
@@ -22,6 +23,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://hotjar.com",
     icon: SiHotjar,
     image: Hotjar,
+    tags: [],
   },
   {
     id: 2,
@@ -29,6 +31,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://analytics.google.com",
     icon: SiGoogleanalytics,
     image: GoogleAnalytics,
+    tags: [],
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://newrelic.com",
     icon: SiNewrelic,
     image: NewRelic,
+    tags: [],
   },
   {
     id: 4,
@@ -43,6 +47,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://sentry.io",
     icon: SiSentry,
     image: Sentry,
+    tags: [],
   },
   {
     id: 5,
@@ -50,6 +55,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://datadoghq.com",
     icon: SiDatadog,
     image: Datadog,
+    tags: [],
   },
   {
     id: 6,
@@ -57,6 +63,7 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://grafana.com",
     icon: SiGrafana,
     image: Grafana,
+    tags: [],
   },
   {
     id: 7,
@@ -64,5 +71,6 @@ export const dataMonitoring: MonitoringProps[] = [
     url: "https://checkmk.com",
     icon: SiCheckmk,
     image: Checkmk,
+    tags: [],
   },
 ];
