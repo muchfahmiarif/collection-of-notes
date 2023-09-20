@@ -14,5 +14,8 @@
   },
   "database": {
     "title": "Database"
+  },
+  "monitoring": {
+    "title": "Monitoring"
   }
 }

@@ -1,4 +1,13 @@
-export type ServerService = {
+import { SiCheckmk, SiDatadog, SiGoogleanalytics, SiGrafana, SiHotjar, SiNewrelic, SiSentry } from "react-icons/si";
+import Hotjar from "@/public/images/library/monitoring/hotjar.svg";
+import GoogleAnalytics from "@/public/images/library/monitoring/googleanalytics.svg";
+import NewRelic from "@/public/images/library/monitoring/newrelic.svg";
+import Sentry from "@/public/images/library/monitoring/sentry.svg";
+import Datadog from "@/public/images/library/monitoring/datadog.svg";
+import Grafana from "@/public/images/library/monitoring/grafana.svg";
+import Checkmk from "@/public/images/library/monitoring/checkmk.svg";
+
+export type MonitoringProps = {
   id: number;
   name: string;
   url: string;
@@ -6,68 +15,54 @@ export type ServerService = {
   image: string;
 };
 
-export const data: ServerService[] = [
+export const data: MonitoringProps[] = [
   {
     id: 1,
-    name: "Vercel",
-    url: "https://vercel.com",
-    icon: SiVercel,
-    image: Vercel,
+    name: "Hotjar",
+    url: "https://hotjar.com",
+    icon: SiHotjar,
+    image: Hotjar,
   },
   {
     id: 2,
-    name: "Netlify",
-    url: "https://netlify.com",
-    icon: SiNetlify,
-    image: Netlify,
+    name: "Google Analytics",
+    url: "https://analytics.google.com",
+    icon: SiGoogleanalytics,
+    image: GoogleAnalytics,
   },
   {
     id: 3,
-    name: "Qovery",
-    url: "https://qovery.com",
-    icon: TbHexagon3D,
-    image: Qovery,
+    name: "New Relic",
+    url: "https://newrelic.com",
+    icon: SiNewrelic,
+    image: NewRelic,
   },
   {
     id: 4,
-    name: "Railway",
-    url: "https://railway.app",
-    icon: SiRailway,
-    image: Railway,
+    name: "Sentry",
+    url: "https://sentry.io",
+    icon: SiSentry,
+    image: Sentry,
   },
   {
     id: 5,
-    name: "Render",
-    url: "https://render.com",
-    icon: SiRender,
-    image: Render,
+    name: "DataDog",
+    url: "https://datadoghq.com",
+    icon: SiDatadog,
+    image: Datadog,
   },
   {
     id: 6,
-    name: "Cyclic",
-    url: "https://cyclic.sh",
-    icon: CgServerless,
-    image: Cyclic,
+    name: "Grafana",
+    url: "https://grafana.com",
+    icon: SiGrafana,
+    image: Grafana,
   },
   {
     id: 7,
-    name: "Fly.io",
-    url: "https://fly.io",
-    icon: CgServerless,
-    image: FlyIo,
-  },
-  {
-    id: 8,
-    name: "Big Data Cloud",
-    url: "https://www.bigdatacloud.com",
-    icon: AiOutlineCloudServer,
-    image: BigDataCloud,
-  },
-  {
-    id: 9,
-    name: "Koyeb",
-    url: "https://www.koyeb.com",
-    icon: SiKoyeb,
-    image: Koyeb,
+    name: "Checkmk",
+    url: "https://checkmk.com",
+    icon: SiCheckmk,
+    image: Checkmk,
   },
 ];
