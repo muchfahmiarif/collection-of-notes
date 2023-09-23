@@ -17,5 +17,11 @@
   },
   "monitoring": {
     "title": "Monitoring"
+  },
+  "smtp": {
+    "title": "SMTP"
+  },
+  "api-gateway": {
+    "title": "API Gateway"
   }
 }
