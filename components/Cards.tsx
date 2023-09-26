@@ -2,17 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
-interface CardsProps {
-  item: {
-    id: number;
-    url: string;
-    image: string;
-    name: string;
-    icon: string;
-    tags: string[];
-  };
-}
+import themeConfig from "@/theme.config";
+import { CardsProps } from "@/types/cards.type";
 
 const Cards: React.FC<CardsProps> = ({ item }) => {
   const [isHover, setIsHover] = React.useState<number | null>(null);
@@ -37,7 +28,11 @@ const Cards: React.FC<CardsProps> = ({ item }) => {
         onMouseOver={() => handleHover(item.id)}
         onMouseLeave={handleMouseLeave}>
         {isHover === item.id && (
-          <Image src={item.image} alt={item.name} className="shrink-0 min-h-full min-w-full items-center justify-center flex flex-wrap opacity-20" />
+          <Image
+            src={themeConfig.darkMode === true ? item.darkImage : item.lightImage}
+            alt={item.name}
+            className="shrink-0 min-h-full min-w-full items-center justify-center flex flex-wrap opacity-20"
+          />
         )}
         <div className="absolute flex flex-wrap left-0 pl-4 w-full h-full content-center items-center">
           <div className={`flex w-full items-center gap-x-3`}>

@@ -1,9 +1,10 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, useConfig, useTheme } from "nextra-theme-docs";
 
 const themeConfig: DocsThemeConfig = {
   // Global
+  darkMode: true,
   primaryHue: {
     dark: 203,
     light: 215,
@@ -29,7 +30,16 @@ const themeConfig: DocsThemeConfig = {
   },
   nextThemes: {
     storageKey: "theme",
-    defaultTheme: "system",
+    defaultTheme: "dark",
+  },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: "Light",
+        dark: "Dark",
+        system: "System",
+      };
+    },
   },
 
   // Navbar

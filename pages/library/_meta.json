@@ -5,9 +5,12 @@
       "breadcrumb": false
     }
   },
-  "-": {
+  "--": {
     "type": "separator",
     "title": "Services"
+  },
+  "api-gateway": {
+    "title": "API Gateway"
   },
   "authentication": {
     "title": "Authentication"
@@ -21,7 +24,14 @@
   "smtp": {
     "title": "SMTP"
   },
-  "api-gateway": {
-    "title": "API Gateway"
+  "server": {
+    "title": "Server"
+  },
+  "-": {
+    "type": "separator",
+    "title": "UI"
+  },
+  "icons": {
+    "title": "Icons"
   }
 }

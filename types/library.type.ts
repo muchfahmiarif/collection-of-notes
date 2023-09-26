@@ -3,6 +3,7 @@ export interface libraryProps {
   name: string;
   url: string;
   icon: string;
-  image: string;
+  darkImage: string;
+  lightImage: string;
   tags: string[];
 }
