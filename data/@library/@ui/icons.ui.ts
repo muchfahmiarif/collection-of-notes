@@ -1,6 +1,7 @@
 import { libraryProps } from "@/types/library.type";
 import { SiFontawesome } from "react-icons/si";
 import FontAwesome from "@/public/images/library/icons/fontawesome.svg";
+import Icon8 from "@/public/images/library/icons/icons8.svg";
 
 export const dataIcons: libraryProps[] = [
   {
@@ -44,7 +45,7 @@ export const dataIcons: libraryProps[] = [
     name: "Icons8",
     url: "https://icons8.com/",
     icon: SiFontawesome,
-    lightImage: FontAwesome,
+    lightImage: Icon8,
     darkImage: FontAwesome,
     tags: [],
   },
