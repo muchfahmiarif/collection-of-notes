@@ -1,4 +1,4 @@
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 import { SiMailgun } from "react-icons/si";
 import Mailgun from "@/public/images/library/smtp/mailgun.svg";
 import SendGrid from "@/public/images/library/smtp/SG_Twilio_Lockup_RGB.svg";
@@ -8,13 +8,14 @@ import { PiIntersectSquareDuotone } from "react-icons/pi";
 import { LuMail } from "react-icons/lu";
 import ElasticEmail from "@/public/images/library/smtp/elastic-email-logos-id_ieeTVE-.svg";
 
-export const dataSMTP: libraryProps[] = [
+export const dataSMTP: cardProps[] = [
   {
     id: 1,
     name: "Mailgun",
     url: "https://www.mailgun.com/",
     icon: SiMailgun,
-    image: Mailgun,
+    lightImage: Mailgun,
+    darkImage: Mailgun,
     tags: [],
   },
   {
@@ -22,7 +23,8 @@ export const dataSMTP: libraryProps[] = [
     name: "Sendgrid",
     url: "https://sendgrid.com/",
     icon: PiIntersectSquareDuotone,
-    image: SendGrid,
+    lightImage: SendGrid,
+    darkImage: SendGrid,
     tags: ["api", "webhook", "smtp relay"],
   },
   {
@@ -30,7 +32,8 @@ export const dataSMTP: libraryProps[] = [
     name: "Mailjet",
     url: "https://www.mailjet.com/",
     icon: BsCursor,
-    image: Mailjet,
+    lightImage: Mailjet,
+    darkImage: Mailjet,
     tags: ["api", "smtp", "webhook"],
   },
   {
@@ -38,7 +41,8 @@ export const dataSMTP: libraryProps[] = [
     name: "Elastic Email",
     url: "https://elasticemail.com/",
     icon: LuMail,
-    image: ElasticEmail,
+    lightImage: ElasticEmail,
+    darkImage: ElasticEmail,
     tags: ["api", "smtp"],
   },
 ];

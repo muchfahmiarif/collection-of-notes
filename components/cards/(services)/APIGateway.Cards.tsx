@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { dataIcons } from "@/data/@library/@ui/icons.ui";
-import Cards from "../Cards";
+import React from "react";
+import Cards from "@/components/Cards";
+import { dataAPIGateway } from "@/data/(library)/(services)/apiGateway.services";
 
-const DatabaseCards = () => {
+const AuthenticationCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {dataIcons.map((item) => (
+        {dataAPIGateway.map((item) => (
           <Cards
             key={item.id}
             id={item.id}
@@ -23,4 +23,4 @@ const DatabaseCards = () => {
   );
 };
 
-export default DatabaseCards;
+export default AuthenticationCards;

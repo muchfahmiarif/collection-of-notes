@@ -6,15 +6,16 @@ import Sentry from "@/public/images/library/monitoring/sentry.svg";
 import Datadog from "@/public/images/library/monitoring/datadog.svg";
 import Grafana from "@/public/images/library/monitoring/grafana.svg";
 import Checkmk from "@/public/images/library/monitoring/checkmk.svg";
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 
-export const dataMonitoring: libraryProps[] = [
+export const dataMonitoring: cardProps[] = [
   {
     id: 1,
     name: "Hotjar",
     url: "https://hotjar.com",
     icon: SiHotjar,
-    image: Hotjar,
+    lightImage: Hotjar,
+    darkImage: Hotjar,
     tags: [],
   },
   {
@@ -22,7 +23,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "Google Analytics",
     url: "https://analytics.google.com",
     icon: SiGoogleanalytics,
-    image: GoogleAnalytics,
+    lightImage: GoogleAnalytics,
+    darkImage: GoogleAnalytics,
     tags: [],
   },
   {
@@ -30,7 +32,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "New Relic",
     url: "https://newrelic.com",
     icon: SiNewrelic,
-    image: NewRelic,
+    lightImage: NewRelic,
+    darkImage: NewRelic,
     tags: [],
   },
   {
@@ -38,7 +41,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "Sentry",
     url: "https://sentry.io",
     icon: SiSentry,
-    image: Sentry,
+    lightImage: Sentry,
+    darkImage: Sentry,
     tags: [],
   },
   {
@@ -46,7 +50,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "DataDog",
     url: "https://datadoghq.com",
     icon: SiDatadog,
-    image: Datadog,
+    lightImage: Datadog,
+    darkImage: Datadog,
     tags: [],
   },
   {
@@ -54,7 +59,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "Grafana",
     url: "https://grafana.com",
     icon: SiGrafana,
-    image: Grafana,
+    lightImage: Grafana,
+    darkImage: Grafana,
     tags: [],
   },
   {
@@ -62,7 +68,8 @@ export const dataMonitoring: libraryProps[] = [
     name: "Checkmk",
     url: "https://checkmk.com",
     icon: SiCheckmk,
-    image: Checkmk,
+    lightImage: Checkmk,
+    darkImage: Checkmk,
     tags: [],
   },
 ];

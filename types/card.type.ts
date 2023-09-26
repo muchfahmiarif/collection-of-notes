@@ -1,4 +1,4 @@
-export interface libraryProps {
+export interface cardProps {
   id: number;
   name: string;
   url: string;

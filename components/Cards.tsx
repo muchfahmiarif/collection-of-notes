@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 
-const Cards: React.FC<libraryProps> = ({ id, url, darkImage, lightImage, name, icon, tags }) => {
+const Cards: React.FC<cardProps> = ({ id, url, darkImage, lightImage, name, icon, tags }) => {
   const [isHover, setIsHover] = React.useState<number | null>(null);
 
   const theme = typeof window !== "undefined" ? localStorage.getItem("theme") : null;

@@ -11,15 +11,16 @@ import Cyclic from "@/public/images/library/server/cyclic.svg";
 import FlyIo from "@/public/images/library/server/logo.svg";
 import BigDataCloud from "@/public/images/library/server/bigDataCloud.svg";
 import Koyeb from "@/public/images/library/server/koyeb.svg";
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 
-export const dataServer: libraryProps[] = [
+export const dataServer: cardProps[] = [
   {
     id: 1,
     name: "Vercel",
     url: "https://vercel.com",
     icon: SiVercel,
-    image: Vercel,
+    lightImage: Vercel,
+    darkImage: Vercel,
     tags: ["nodejs", "api", "serverless", "ci-cd"],
   },
   {
@@ -27,7 +28,8 @@ export const dataServer: libraryProps[] = [
     name: "Netlify",
     url: "https://netlify.com",
     icon: SiNetlify,
-    image: Netlify,
+    lightImage: Netlify,
+    darkImage: Netlify,
     tags: ["nodejs", "api", "serverless"],
   },
   {
@@ -35,7 +37,8 @@ export const dataServer: libraryProps[] = [
     name: "Qovery",
     url: "https://qovery.com",
     icon: TbHexagon3D,
-    image: Qovery,
+    lightImage: Qovery,
+    darkImage: Qovery,
     tags: ["AWS"],
   },
   {
@@ -43,7 +46,8 @@ export const dataServer: libraryProps[] = [
     name: "Railway",
     url: "https://railway.app",
     icon: SiRailway,
-    image: Railway,
+    lightImage: Railway,
+    darkImage: Railway,
     tags: ["laravel", "nodejs", "api", "serverless"],
   },
   {
@@ -51,7 +55,8 @@ export const dataServer: libraryProps[] = [
     name: "Render",
     url: "https://render.com",
     icon: SiRender,
-    image: Render,
+    lightImage: Render,
+    darkImage: Render,
     tags: ["database", "docker", "nodejs", "api"],
   },
   {
@@ -59,7 +64,8 @@ export const dataServer: libraryProps[] = [
     name: "Cyclic",
     url: "https://cyclic.sh",
     icon: CgServerless,
-    image: Cyclic,
+    lightImage: Cyclic,
+    darkImage: Cyclic,
     tags: ["serverless", "nodejs", "python", "go"],
   },
   {
@@ -67,7 +73,8 @@ export const dataServer: libraryProps[] = [
     name: "Fly.io",
     url: "https://fly.io",
     icon: CgServerless,
-    image: FlyIo,
+    lightImage: FlyIo,
+    darkImage: FlyIo,
     tags: ["vm", "nodejs", "elixir", "rails", "python", "go"],
   },
   {
@@ -75,7 +82,8 @@ export const dataServer: libraryProps[] = [
     name: "Big Data Cloud",
     url: "https://www.bigdatacloud.com",
     icon: AiOutlineCloudServer,
-    image: BigDataCloud,
+    lightImage: BigDataCloud,
+    darkImage: BigDataCloud,
     tags: ["api"],
   },
   {
@@ -83,7 +91,8 @@ export const dataServer: libraryProps[] = [
     name: "Koyeb",
     url: "https://www.koyeb.com",
     icon: SiKoyeb,
-    image: Koyeb,
+    lightImage: Koyeb,
+    darkImage: Koyeb,
     tags: ["api", "workers"],
   },
 ];

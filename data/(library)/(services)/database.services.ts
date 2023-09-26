@@ -11,15 +11,16 @@ import Cockroachlabs from "@/public/images/library/database/cockroachlabs.svg";
 import Supabase from "@/public/images/library/database/supabase.svg";
 import Neon from "@/public/images/library/database/neon.svg";
 import Xata from "@/public/images/library/database/butterfly-fill.svg";
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 
-export const dataDatabase: libraryProps[] = [
+export const dataDatabase: cardProps[] = [
   {
     id: 1,
     name: "Mongo DB",
     url: "https://www.mongodb.com/",
     icon: SiMongodb,
-    image: MongoDB,
+    lightImage: MongoDB,
+    darkImage: MongoDB,
     tags: ["nosql"],
   },
   {
@@ -27,7 +28,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Fauna",
     url: "https://fauna.com/",
     icon: SiFauna,
-    image: Fauna,
+    lightImage: Fauna,
+    darkImage: Fauna,
     tags: [],
   },
   {
@@ -35,7 +37,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Firebase",
     url: "https://firebase.google.com/docs/database",
     icon: SiFirebase,
-    image: Firebase,
+    lightImage: Firebase,
+    darkImage: Firebase,
     tags: [],
   },
   {
@@ -43,7 +46,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Supabase",
     url: "https://supabase.io/",
     icon: SiSupabase,
-    image: Supabase,
+    lightImage: Supabase,
+    darkImage: Supabase,
     tags: [],
   },
   {
@@ -51,7 +55,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Planetscale",
     url: "https://planetscale.com/",
     icon: SiPlanetscale,
-    image: Planetscale,
+    lightImage: Planetscale,
+    darkImage: Planetscale,
     tags: [],
   },
   {
@@ -59,7 +64,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Neon Tech",
     url: "https://neon.tech/",
     icon: HiDatabase,
-    image: Neon,
+    lightImage: Neon,
+    darkImage: Neon,
     tags: [],
   },
   {
@@ -67,7 +73,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Upstash",
     url: "https://upstash.com/",
     icon: SiUpstash,
-    image: Upstash,
+    lightImage: Upstash,
+    darkImage: Upstash,
     tags: ["redis", "kafka", "qstash"],
   },
   {
@@ -75,7 +82,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Xata",
     url: "https://xata.io/",
     icon: PiButterflyFill,
-    image: Xata,
+    lightImage: Xata,
+    darkImage: Xata,
     tags: [],
   },
   {
@@ -83,7 +91,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Cockroach DB",
     url: "https://www.cockroachlabs.com/",
     icon: SiCockroachlabs,
-    image: Cockroachlabs,
+    lightImage: Cockroachlabs,
+    darkImage: Cockroachlabs,
     tags: [],
   },
   {
@@ -91,7 +100,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Amazon Aurora",
     url: "https://aws.amazon.com/aurora/",
     icon: SiAmazondocumentdb,
-    image: FacebookImage,
+    lightImage: FacebookImage,
+    darkImage: FacebookImage,
     tags: [],
   },
   {
@@ -99,7 +109,8 @@ export const dataDatabase: libraryProps[] = [
     name: "Amazon DynamoDB",
     url: "https://aws.amazon.com/dynamodb/",
     icon: SiAmazondocumentdb,
-    image: FacebookImage,
+    lightImage: FacebookImage,
+    darkImage: FacebookImage,
     tags: [],
   },
 ];

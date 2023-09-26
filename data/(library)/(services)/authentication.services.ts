@@ -10,15 +10,16 @@ import AWSAmplify from "@/public/images/library/authentication/awsamplify.svg";
 import Clerk from "@/public/images/library/authentication/clerk-logomark-light.svg";
 import Permit from "@/public/images/library/authentication/permit.svg";
 import Passport from "@/public/images/library/authentication/passport.svg";
-import { libraryProps } from "@/types/library.type";
+import { cardProps } from "@/types/card.type";
 
-export const dataAuthentication: libraryProps[] = [
+export const dataAuthentication: cardProps[] = [
   {
     id: 1,
     name: "Auth0",
     url: "https://auth0.com/",
     icon: SiAuth0,
-    image: Auth0,
+    lightImage: Auth0,
+    darkImage: Auth0,
     tags: [],
   },
   {
@@ -26,7 +27,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Firebase",
     url: "https://firebase.google.com/docs/auth",
     icon: SiFirebase,
-    image: Firebase,
+    lightImage: Firebase,
+    darkImage: Firebase,
     tags: [],
   },
   {
@@ -34,7 +36,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Next Auth",
     url: "https://next-auth.js.org/",
     icon: BsFillShieldLockFill,
-    image: NextAuth,
+    lightImage: NextAuth,
+    darkImage: NextAuth,
     tags: [],
   },
   {
@@ -42,7 +45,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Supabase",
     url: "https://supabase.com/auth",
     icon: SiSupabase,
-    image: Supabase,
+    lightImage: Supabase,
+    darkImage: Supabase,
     tags: [],
   },
   {
@@ -50,7 +54,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "AWS Amplify",
     url: "https://aws.amazon.com/amplify/",
     icon: SiAwsamplify,
-    image: AWSAmplify,
+    lightImage: AWSAmplify,
+    darkImage: AWSAmplify,
     tags: [],
   },
   {
@@ -58,7 +63,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Clerk",
     url: "https://clerk.dev/",
     icon: FaCircleUser,
-    image: Clerk,
+    lightImage: Clerk,
+    darkImage: Clerk,
     tags: [],
   },
   {
@@ -66,7 +72,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Permit",
     url: "https://www.permit.io/",
     icon: PiDogFill,
-    image: Permit,
+    lightImage: Permit,
+    darkImage: Permit,
     tags: [],
   },
   {
@@ -74,7 +81,8 @@ export const dataAuthentication: libraryProps[] = [
     name: "Passport",
     url: "http://www.passportjs.org/",
     icon: SiPassport,
-    image: Passport,
+    lightImage: Passport,
+    darkImage: Passport,
     tags: [],
   },
 ];
