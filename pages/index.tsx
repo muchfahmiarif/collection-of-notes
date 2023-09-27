@@ -14,8 +14,8 @@ export default function Home() {
             }}>
             Click me
           </Button>
-          {/* <Navbar />
-          <NavigationMenuDemo /> */}
+          <Navbar />
+          {/* <NavigationMenuDemo /> */}
           <div className="min-h-screen"></div>
         </div>
       </div>
