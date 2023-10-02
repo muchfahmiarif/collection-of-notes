@@ -3,9 +3,17 @@ import { assets } from "@/utils/asset";
 import Image from "next/image";
 import { type Framework, frameworks } from "@/utils/frameworks";
 import { cn } from "@/lib/utils";
+import { poppins } from "./_app";
+import FrameworkRotation from "@/components/FrameworkRotation";
 
 export default function Home() {
   const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
+  const [showBackground, setShowBackground] = useState(false);
+  const [ismounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(!ismounted);
+  }, [ismounted]);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -13,9 +21,13 @@ export default function Home() {
       setCurrentFramework(frameworks[currentIndex]);
       currentIndex = (currentIndex + 1) % frameworks.length;
     };
-    const intervalId = setInterval(rotateFrameworks, 2000);
+    const intervalId = setInterval(rotateFrameworks, 2500);
 
     return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    setShowBackground(true);
   }, []);
 
   return (
@@ -41,6 +53,16 @@ export default function Home() {
         role="presentation"
       />
       <div className="fixed inset-0 opacity-30" style={{ backgroundImage: `url(${assets.square})`, backgroundSize: "30px" }}></div>
+      <div className={cn("bg-black fixed inset-0 transition-opacity duration-1000", !showBackground ? "opacity-100" : "opacity-0")}></div>
+
+      <div className="max-w-7xl mt-20 mx-auto">
+        <div className="flex flex-col items-center relative z-10">
+          <h1 className={`text-5xl max-w-3xl leading-snug mb-12 ${poppins.className} text-white`}>
+            <Image alt="Figma Logo" className="inline-block mr-8 -mt-2" src={assets.figma} width={50} height={50} />
+            to <FrameworkRotation currentFramework={currentFramework} /> will <span>never</span> be the same again
+          </h1>
+        </div>
+      </div>
     </div>
   );
 }
