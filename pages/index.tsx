@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { poppins } from "./_app";
 import FrameworkRotation from "@/components/FrameworkRotation";
 import { Button } from "@/components/ui/button";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 export default function Home() {
   const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
@@ -116,6 +117,7 @@ export default function Home() {
             )}>
             Test
           </Button>
+          <CountdownTimer currentFramework={currentFramework} />
         </div>
       </div>
     </div>
