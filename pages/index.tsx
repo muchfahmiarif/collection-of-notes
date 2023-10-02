@@ -5,6 +5,7 @@ import { type Framework, frameworks } from "@/utils/frameworks";
 import { cn } from "@/lib/utils";
 import { poppins } from "./_app";
 import FrameworkRotation from "@/components/FrameworkRotation";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
@@ -57,7 +58,7 @@ export default function Home() {
 
       <div className="max-w-7xl mt-20 mx-auto">
         <div className="flex flex-col items-center relative z-10">
-          <h1 className={`text-5xl max-w-3xl leading-snug mb-12 ${poppins.className} text-white`}>
+          <h1 className={`text-5xl max-w-3xl leading-snug mb-12 ${poppins.className} text-white font-bold`}>
             <Image alt="Figma Logo" className="inline-block mr-8 -mt-2" src={assets.figma} width={50} height={50} />
             to <FrameworkRotation currentFramework={currentFramework} /> will{" "}
             <span
@@ -76,6 +77,45 @@ export default function Home() {
             </span>{" "}
             be the same again
           </h1>
+          <Button
+            className={cn(
+              "transition-color duration-200 text-black font-semibold border-2",
+              {
+                "border-purple-300": currentFramework === "qwik",
+                "border-sky-300": currentFramework === "safari",
+                "border-yellow-300": currentFramework === "chrome",
+                "border-teal-300": currentFramework === "tailwind",
+                "border-blue-300": currentFramework === "react",
+                "border-green-300": currentFramework === "vue",
+                "border-orange-400": currentFramework === "svelte",
+                "border-red-300": currentFramework === "mobile",
+                "border-neutral-300": currentFramework === "desktop",
+              },
+              {
+                "bg-purple-300/20": currentFramework === "qwik",
+                "bg-sky-300/20": currentFramework === "safari",
+                "bg-yellow-300/20": currentFramework === "chrome",
+                "bg-teal-300/20": currentFramework === "tailwind",
+                "bg-blue-300/20": currentFramework === "react",
+                "bg-green-300/20": currentFramework === "vue",
+                "bg-orange-400/20": currentFramework === "svelte",
+                "bg-red-300/20": currentFramework === "mobile",
+                "bg-neutral-300/20": currentFramework === "desktop",
+              },
+              {
+                "hover:bg-purple-300": currentFramework === "qwik",
+                "hover:bg-sky-300": currentFramework === "safari",
+                "hover:bg-yellow-300": currentFramework === "chrome",
+                "hover:bg-teal-300": currentFramework === "tailwind",
+                "hover:bg-blue-300": currentFramework === "react",
+                "hover:bg-green-300": currentFramework === "vue",
+                "hover:bg-orange-400": currentFramework === "svelte",
+                "hover:bg-red-300": currentFramework === "mobile",
+                "hover:bg-neutral-300": currentFramework === "desktop",
+              }
+            )}>
+            Test
+          </Button>
         </div>
       </div>
     </div>
