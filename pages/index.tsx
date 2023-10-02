@@ -59,7 +59,22 @@ export default function Home() {
         <div className="flex flex-col items-center relative z-10">
           <h1 className={`text-5xl max-w-3xl leading-snug mb-12 ${poppins.className} text-white`}>
             <Image alt="Figma Logo" className="inline-block mr-8 -mt-2" src={assets.figma} width={50} height={50} />
-            to <FrameworkRotation currentFramework={currentFramework} /> will <span>never</span> be the same again
+            to <FrameworkRotation currentFramework={currentFramework} /> will{" "}
+            <span
+              className={cn("transition-colors duration-200", {
+                "text-purple-300": currentFramework === "qwik",
+                "text-sky-300": currentFramework === "safari",
+                "text-yellow-300": currentFramework === "chrome",
+                "text-teal-300": currentFramework === "tailwind",
+                "text-blue-300": currentFramework === "react",
+                "text-green-300": currentFramework === "vue",
+                "text-orange-400": currentFramework === "svelte",
+                "text-red-300": currentFramework === "mobile",
+                "text-neutral-300": currentFramework === "desktop",
+              })}>
+              never
+            </span>{" "}
+            be the same again
           </h1>
         </div>
       </div>
