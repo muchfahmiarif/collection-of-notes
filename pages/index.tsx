@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { assets } from "@/utils/asset";
+import { assets } from "@/lib/assets";
 import Image from "next/image";
 import { type Framework, frameworks } from "@/utils/frameworks";
 import { cn } from "@/lib/utils";
@@ -8,6 +8,7 @@ import FrameworkRotation from "@/components/FrameworkRotation";
 import { Button } from "@/components/ui/button";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { useRouter } from "next/router";
+import Background from "@/components/(home-page)/(hero-section)/Background.Hero";
 
 export default function Home() {
   const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
@@ -37,29 +38,7 @@ export default function Home() {
 
   return (
     <div>
-      <div
-        className={cn("fixed inset-0 transition-colors delay-100 duration-700 opacity-25", {
-          "bg-purple-300": currentFramework === "qwik",
-          "bg-sky-300": currentFramework === "safari",
-          "bg-yellow-300": currentFramework === "chrome",
-          "bg-teal-300": currentFramework === "tailwind",
-          "bg-blue-300": currentFramework === "react",
-          "bg-green-300": currentFramework === "vue",
-          "bg-orange-400": currentFramework === "svelte",
-          "bg-red-300": currentFramework === "mobile",
-          "bg-neutral-300": currentFramework === "desktop",
-        })}></div>
-      <Image
-        src={assets.gradient}
-        alt="gradient background"
-        height={1200}
-        width={1200}
-        className="fixed h-screen w-screen inset-0 object-cover"
-        role="presentation"
-      />
-      <div className="fixed inset-0 opacity-30" style={{ backgroundImage: `url(${assets.square})`, backgroundSize: "30px" }}></div>
-      <div className={cn("bg-black fixed inset-0 transition-opacity duration-1000", !showBackground ? "opacity-100" : "opacity-0")}></div>
-
+      <Background />
       <div className="max-w-7xl mt-20 mx-auto">
         <div className="flex flex-col items-center relative z-10">
           <h1 className={`text-5xl max-w-3xl leading-snug mb-12 ${poppins.className} text-white font-bold`}>
@@ -118,7 +97,7 @@ export default function Home() {
                 "hover:bg-neutral-300": currentFramework === "desktop",
               }
             )}
-            onClick={() => router.push("/docs")}>
+            onClick={() => (window.location.href = "/docs")}>
             Test
           </Button>
           <CountdownTimer currentFramework={currentFramework} />
