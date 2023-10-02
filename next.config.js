@@ -9,4 +9,9 @@ const nextConfig = require("nextra")({
   latex: true,
 });
 
-module.exports = nextConfig({});
+module.exports = nextConfig({
+  images: {
+    domains: ["cdn.builder.io"],
+    dangerouslyAllowSVG: true,
+  },
+});
