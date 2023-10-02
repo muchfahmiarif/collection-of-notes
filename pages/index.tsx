@@ -7,6 +7,7 @@ import { poppins } from "./_app";
 import FrameworkRotation from "@/components/FrameworkRotation";
 import { Button } from "@/components/ui/button";
 import { CountdownTimer } from "@/components/CountdownTimer";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const [currentFramework, setCurrentFramework] = useState<Framework>(frameworks[0]);
@@ -32,8 +33,10 @@ export default function Home() {
     setShowBackground(true);
   }, []);
 
+  const router = useRouter();
+
   return (
-    <div className={``}>
+    <div>
       <div
         className={cn("fixed inset-0 transition-colors delay-100 duration-700 opacity-25", {
           "bg-purple-300": currentFramework === "qwik",
@@ -114,7 +117,8 @@ export default function Home() {
                 "hover:bg-red-300": currentFramework === "mobile",
                 "hover:bg-neutral-300": currentFramework === "desktop",
               }
-            )}>
+            )}
+            onClick={() => router.push("/docs")}>
             Test
           </Button>
           <CountdownTimer currentFramework={currentFramework} />
