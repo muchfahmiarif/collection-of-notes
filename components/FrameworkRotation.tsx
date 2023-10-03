@@ -1,4 +1,4 @@
-import { assets } from "@/utils/asset";
+import { assets } from "@/lib/assets";
 import { frameworks, type Framework } from "@/utils/frameworks";
 import Image from "next/image";
 import React from "react";
