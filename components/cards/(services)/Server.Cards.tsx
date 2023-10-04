@@ -15,6 +15,7 @@ const ServerCards = () => {
             icon={item.icon}
             darkImage={item.darkImage}
             lightImage={item.lightImage}
+            suggested={item.suggested}
             tags={item.tags}
           />
         ))}

@@ -22,6 +22,7 @@ export const dataIcons: cardProps[] = [
     icon: SiFontawesome,
     lightImage: FontAwesome,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
   {
@@ -31,6 +32,7 @@ export const dataIcons: cardProps[] = [
     icon: IoShapesOutline,
     lightImage: IconBuddyLight,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
   {
@@ -40,6 +42,7 @@ export const dataIcons: cardProps[] = [
     icon: HiMagnifyingGlassCircle,
     lightImage: IconScoutLight,
     darkImage: IconScoutDark,
+    suggested: false,
     tags: [],
   },
   {
@@ -49,6 +52,7 @@ export const dataIcons: cardProps[] = [
     icon: SiIconfinder,
     lightImage: IconFinderLight,
     darkImage: IconFinderDark,
+    suggested: false,
     tags: [],
   },
   {
@@ -58,6 +62,7 @@ export const dataIcons: cardProps[] = [
     icon: SiIcons8,
     lightImage: Icon8,
     darkImage: Icon8,
+    suggested: false,
     tags: [],
   },
   {
@@ -67,6 +72,7 @@ export const dataIcons: cardProps[] = [
     icon: SiFontawesome,
     lightImage: FontAwesome,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
   {
@@ -76,6 +82,7 @@ export const dataIcons: cardProps[] = [
     icon: FaPenNib,
     lightImage: FontAwesome,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
   {
@@ -85,6 +92,7 @@ export const dataIcons: cardProps[] = [
     icon: SiUpstash,
     lightImage: IconLucideLight,
     darkImage: IconLucideDark,
+    suggested: false,
     tags: [],
   },
   {
@@ -94,6 +102,7 @@ export const dataIcons: cardProps[] = [
     icon: TbShield,
     lightImage: FontAwesome,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
   {
@@ -103,6 +112,7 @@ export const dataIcons: cardProps[] = [
     icon: SiFontawesome,
     lightImage: FontAwesome,
     darkImage: FontAwesome,
+    suggested: false,
     tags: [],
   },
 ];

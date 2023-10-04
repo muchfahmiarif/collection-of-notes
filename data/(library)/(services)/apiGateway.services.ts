@@ -14,6 +14,7 @@ export const dataAPIGateway: cardProps[] = [
     icon: SiKong,
     lightImage: SiKongImage,
     darkImage: SiKongImage,
+    suggested: false,
     tags: [],
   },
   {
@@ -23,6 +24,7 @@ export const dataAPIGateway: cardProps[] = [
     icon: IoIosLeaf,
     lightImage: Tyk,
     darkImage: Tyk,
+    suggested: false,
     tags: [],
   },
   {
@@ -32,6 +34,7 @@ export const dataAPIGateway: cardProps[] = [
     icon: GiOctopus,
     lightImage: KrakenD,
     darkImage: KrakenD,
+    suggested: false,
     tags: [],
   },
 ];

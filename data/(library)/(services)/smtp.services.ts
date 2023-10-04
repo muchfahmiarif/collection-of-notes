@@ -16,6 +16,7 @@ export const dataSMTP: cardProps[] = [
     icon: SiMailgun,
     lightImage: Mailgun,
     darkImage: Mailgun,
+    suggested: false,
     tags: [],
   },
   {
@@ -25,6 +26,7 @@ export const dataSMTP: cardProps[] = [
     icon: PiIntersectSquareDuotone,
     lightImage: SendGrid,
     darkImage: SendGrid,
+    suggested: false,
     tags: ["api", "webhook", "smtp relay"],
   },
   {
@@ -34,6 +36,7 @@ export const dataSMTP: cardProps[] = [
     icon: BsCursor,
     lightImage: Mailjet,
     darkImage: Mailjet,
+    suggested: false,
     tags: ["api", "smtp", "webhook"],
   },
   {
@@ -43,6 +46,7 @@ export const dataSMTP: cardProps[] = [
     icon: LuMail,
     lightImage: ElasticEmail,
     darkImage: ElasticEmail,
+    suggested: false,
     tags: ["api", "smtp"],
   },
 ];

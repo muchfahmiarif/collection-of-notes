@@ -20,6 +20,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiAuth0,
     lightImage: Auth0,
     darkImage: Auth0,
+    suggested: false,
     tags: [],
   },
   {
@@ -29,6 +30,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiFirebase,
     lightImage: Firebase,
     darkImage: Firebase,
+    suggested: false,
     tags: [],
   },
   {
@@ -38,6 +40,7 @@ export const dataAuthentication: cardProps[] = [
     icon: BsFillShieldLockFill,
     lightImage: NextAuth,
     darkImage: NextAuth,
+    suggested: false,
     tags: [],
   },
   {
@@ -47,6 +50,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiSupabase,
     lightImage: Supabase,
     darkImage: Supabase,
+    suggested: false,
     tags: [],
   },
   {
@@ -56,6 +60,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiAwsamplify,
     lightImage: AWSAmplify,
     darkImage: AWSAmplify,
+    suggested: false,
     tags: [],
   },
   {
@@ -65,6 +70,7 @@ export const dataAuthentication: cardProps[] = [
     icon: FaCircleUser,
     lightImage: Clerk,
     darkImage: Clerk,
+    suggested: false,
     tags: [],
   },
   {
@@ -74,6 +80,7 @@ export const dataAuthentication: cardProps[] = [
     icon: PiDogFill,
     lightImage: Permit,
     darkImage: Permit,
+    suggested: false,
     tags: [],
   },
   {
@@ -83,6 +90,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiPassport,
     lightImage: Passport,
     darkImage: Passport,
+    suggested: false,
     tags: [],
   },
 ];

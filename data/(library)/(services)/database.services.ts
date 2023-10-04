@@ -21,6 +21,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiMongodb,
     lightImage: MongoDB,
     darkImage: MongoDB,
+    suggested: false,
     tags: ["nosql"],
   },
   {
@@ -30,6 +31,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiFauna,
     lightImage: Fauna,
     darkImage: Fauna,
+    suggested: false,
     tags: [],
   },
   {
@@ -39,6 +41,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiFirebase,
     lightImage: Firebase,
     darkImage: Firebase,
+    suggested: false,
     tags: [],
   },
   {
@@ -48,6 +51,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiSupabase,
     lightImage: Supabase,
     darkImage: Supabase,
+    suggested: false,
     tags: [],
   },
   {
@@ -57,6 +61,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiPlanetscale,
     lightImage: Planetscale,
     darkImage: Planetscale,
+    suggested: false,
     tags: [],
   },
   {
@@ -66,6 +71,7 @@ export const dataDatabase: cardProps[] = [
     icon: HiDatabase,
     lightImage: Neon,
     darkImage: Neon,
+    suggested: false,
     tags: [],
   },
   {
@@ -75,6 +81,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiUpstash,
     lightImage: Upstash,
     darkImage: Upstash,
+    suggested: false,
     tags: ["redis", "kafka", "qstash"],
   },
   {
@@ -84,6 +91,7 @@ export const dataDatabase: cardProps[] = [
     icon: PiButterflyFill,
     lightImage: Xata,
     darkImage: Xata,
+    suggested: false,
     tags: [],
   },
   {
@@ -93,6 +101,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiCockroachlabs,
     lightImage: Cockroachlabs,
     darkImage: Cockroachlabs,
+    suggested: false,
     tags: [],
   },
   {
@@ -102,6 +111,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiAmazondocumentdb,
     lightImage: FacebookImage,
     darkImage: FacebookImage,
+    suggested: false,
     tags: [],
   },
   {
@@ -111,6 +121,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiAmazondocumentdb,
     lightImage: FacebookImage,
     darkImage: FacebookImage,
+    suggested: false,
     tags: [],
   },
 ];

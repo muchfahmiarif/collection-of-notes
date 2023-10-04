@@ -21,6 +21,7 @@ export const dataServer: cardProps[] = [
     icon: SiVercel,
     lightImage: Vercel,
     darkImage: Vercel,
+    suggested: true,
     tags: ["nodejs", "api", "serverless", "ci-cd"],
   },
   {
@@ -30,6 +31,7 @@ export const dataServer: cardProps[] = [
     icon: SiNetlify,
     lightImage: Netlify,
     darkImage: Netlify,
+    suggested: false,
     tags: ["nodejs", "api", "serverless"],
   },
   {
@@ -39,6 +41,7 @@ export const dataServer: cardProps[] = [
     icon: TbHexagon3D,
     lightImage: Qovery,
     darkImage: Qovery,
+    suggested: false,
     tags: ["AWS"],
   },
   {
@@ -48,6 +51,7 @@ export const dataServer: cardProps[] = [
     icon: SiRailway,
     lightImage: Railway,
     darkImage: Railway,
+    suggested: false,
     tags: ["laravel", "nodejs", "api", "serverless"],
   },
   {
@@ -57,6 +61,7 @@ export const dataServer: cardProps[] = [
     icon: SiRender,
     lightImage: Render,
     darkImage: Render,
+    suggested: false,
     tags: ["database", "docker", "nodejs", "api"],
   },
   {
@@ -66,6 +71,7 @@ export const dataServer: cardProps[] = [
     icon: CgServerless,
     lightImage: Cyclic,
     darkImage: Cyclic,
+    suggested: false,
     tags: ["serverless", "nodejs", "python", "go"],
   },
   {
@@ -75,6 +81,7 @@ export const dataServer: cardProps[] = [
     icon: CgServerless,
     lightImage: FlyIo,
     darkImage: FlyIo,
+    suggested: false,
     tags: ["vm", "nodejs", "elixir", "rails", "python", "go"],
   },
   {
@@ -84,6 +91,7 @@ export const dataServer: cardProps[] = [
     icon: AiOutlineCloudServer,
     lightImage: BigDataCloud,
     darkImage: BigDataCloud,
+    suggested: false,
     tags: ["api"],
   },
   {
@@ -93,6 +101,7 @@ export const dataServer: cardProps[] = [
     icon: SiKoyeb,
     lightImage: Koyeb,
     darkImage: Koyeb,
+    suggested: false,
     tags: ["api", "workers"],
   },
 ];

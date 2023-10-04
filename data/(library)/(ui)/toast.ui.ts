@@ -14,6 +14,7 @@ export const dataToast: cardProps[] = [
     icon: MdCircleNotifications,
     lightImage: DefaultLight,
     darkImage: DefaultDark,
+    suggested: true,
     tags: [],
   },
   {
@@ -23,6 +24,7 @@ export const dataToast: cardProps[] = [
     icon: TbSquareLetterH,
     lightImage: ReactHotToastLight,
     darkImage: ReactHotToastDark,
+    suggested: false,
     tags: [],
   },
 ];

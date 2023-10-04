@@ -16,6 +16,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiHotjar,
     lightImage: Hotjar,
     darkImage: Hotjar,
+    suggested: false,
     tags: [],
   },
   {
@@ -25,6 +26,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiGoogleanalytics,
     lightImage: GoogleAnalytics,
     darkImage: GoogleAnalytics,
+    suggested: false,
     tags: [],
   },
   {
@@ -34,6 +36,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiNewrelic,
     lightImage: NewRelic,
     darkImage: NewRelic,
+    suggested: false,
     tags: [],
   },
   {
@@ -43,6 +46,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiSentry,
     lightImage: Sentry,
     darkImage: Sentry,
+    suggested: false,
     tags: [],
   },
   {
@@ -52,6 +56,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiDatadog,
     lightImage: Datadog,
     darkImage: Datadog,
+    suggested: false,
     tags: [],
   },
   {
@@ -61,6 +66,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiGrafana,
     lightImage: Grafana,
     darkImage: Grafana,
+    suggested: false,
     tags: [],
   },
   {
@@ -70,6 +76,7 @@ export const dataMonitoring: cardProps[] = [
     icon: SiCheckmk,
     lightImage: Checkmk,
     darkImage: Checkmk,
+    suggested: false,
     tags: [],
   },
 ];

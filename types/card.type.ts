@@ -5,5 +5,6 @@ export interface cardProps {
   icon: string;
   darkImage: string;
   lightImage: string;
+  suggested?: boolean;
   tags: string[];
 }
