@@ -11,5 +11,12 @@
   },
   "linux": {
     "title": "Linux"
+  },
+  "--": {
+    "type": "separator",
+    "title": "UI"
+  },
+  "components": {
+    "title": "Components"
   }
 }
