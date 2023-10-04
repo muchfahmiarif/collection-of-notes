@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { cardProps } from "@/types/card.type";
+import { BsFillHandThumbsUpFill } from "react-icons/bs";
 
-const Cards: React.FC<cardProps> = ({ id, url, darkImage, lightImage, name, icon, tags }) => {
+const Cards: React.FC<cardProps> = ({ id, url, darkImage, lightImage, name, icon, tags, suggested }) => {
   const [isHover, setIsHover] = React.useState<number | null>(null);
 
   const theme = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
@@ -35,6 +36,12 @@ const Cards: React.FC<cardProps> = ({ id, url, darkImage, lightImage, name, icon
             <span className={`text-2xl ${tags.length - 1 ? `` : `group-hover:text-lg`}`}>{React.createElement(icon)}</span>
             {name}
           </div>
+          {/* <div className="absolute right-2 top-2">tes</div> */}
+          {suggested === true && (
+            <div className="absolute right-2 top-2">
+              <BsFillHandThumbsUpFill className="text-neutral-300 dark:text-neutral-700" />
+            </div>
+          )}
           {isHover === id && (
             <div className="flex">
               <p className={cn(`text-neutral-700 dark:text-neutral-200 text-xs font-sans pt-2`)}>

@@ -2,14 +2,14 @@ import { SiAuth0, SiAwsamplify, SiFirebase, SiPassport, SiSupabase } from "react
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { FaCircleUser } from "react-icons/fa6";
 import { PiDogFill } from "react-icons/pi";
-import Auth0 from "@/public/images/library/authentication/auth0.svg";
-import Firebase from "@/public/images/library/authentication/firebase.svg";
-import NextAuth from "@/public/images/library/authentication/next-auth.webp";
-import Supabase from "@/public/images/library/authentication/supabase.svg";
-import AWSAmplify from "@/public/images/library/authentication/awsamplify.svg";
-import Clerk from "@/public/images/library/authentication/clerk-logomark-light.svg";
-import Permit from "@/public/images/library/authentication/permit.svg";
-import Passport from "@/public/images/library/authentication/passport.svg";
+import Auth0 from "@/public/images/library/services/authentication/auth0.svg";
+import Firebase from "@/public/images/library/services/authentication/firebase.svg";
+import NextAuth from "@/public/images/library/services/authentication/next-auth.webp";
+import Supabase from "@/public/images/library/services/authentication/supabase.svg";
+import AWSAmplify from "@/public/images/library/services/authentication/awsamplify.svg";
+import Clerk from "@/public/images/library/services/authentication/clerk-logomark-light.svg";
+import Permit from "@/public/images/library/services/authentication/permit.svg";
+import Passport from "@/public/images/library/services/authentication/passport.svg";
 import { cardProps } from "@/types/card.type";
 
 export const dataAuthentication: cardProps[] = [
@@ -20,6 +20,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiAuth0,
     lightImage: Auth0,
     darkImage: Auth0,
+    suggested: false,
     tags: [],
   },
   {
@@ -29,6 +30,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiFirebase,
     lightImage: Firebase,
     darkImage: Firebase,
+    suggested: false,
     tags: [],
   },
   {
@@ -38,6 +40,7 @@ export const dataAuthentication: cardProps[] = [
     icon: BsFillShieldLockFill,
     lightImage: NextAuth,
     darkImage: NextAuth,
+    suggested: false,
     tags: [],
   },
   {
@@ -47,6 +50,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiSupabase,
     lightImage: Supabase,
     darkImage: Supabase,
+    suggested: false,
     tags: [],
   },
   {
@@ -56,6 +60,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiAwsamplify,
     lightImage: AWSAmplify,
     darkImage: AWSAmplify,
+    suggested: false,
     tags: [],
   },
   {
@@ -65,6 +70,7 @@ export const dataAuthentication: cardProps[] = [
     icon: FaCircleUser,
     lightImage: Clerk,
     darkImage: Clerk,
+    suggested: false,
     tags: [],
   },
   {
@@ -74,6 +80,7 @@ export const dataAuthentication: cardProps[] = [
     icon: PiDogFill,
     lightImage: Permit,
     darkImage: Permit,
+    suggested: false,
     tags: [],
   },
   {
@@ -83,6 +90,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiPassport,
     lightImage: Passport,
     darkImage: Passport,
+    suggested: false,
     tags: [],
   },
 ];
