@@ -2,15 +2,15 @@ import { SiFauna, SiFirebase, SiMongodb, SiSupabase, SiPlanetscale, SiUpstash, S
 import { HiDatabase } from "react-icons/hi";
 import { PiButterflyFill } from "react-icons/pi";
 import FacebookImage from "@/public/images/facebook.svg";
-import MongoDB from "@/public/images/library/database/mongodb.svg";
-import Fauna from "@/public/images/library/database/fauna.svg";
-import Firebase from "@/public/images/library/database/firebase.svg";
-import Planetscale from "@/public/images/library/database/planetscale.svg";
-import Upstash from "@/public/images/library/database/upstash.svg";
-import Cockroachlabs from "@/public/images/library/database/cockroachlabs.svg";
-import Supabase from "@/public/images/library/database/supabase.svg";
-import Neon from "@/public/images/library/database/neon.svg";
-import Xata from "@/public/images/library/database/butterfly-fill.svg";
+import MongoDB from "@/public/images/library/services/database/mongodb.svg";
+import Fauna from "@/public/images/library/services/database/fauna.svg";
+import Firebase from "@/public/images/library/services/database/firebase.svg";
+import Planetscale from "@/public/images/library/services/database/planetscale.svg";
+import Upstash from "@/public/images/library/services/database/upstash.svg";
+import Cockroachlabs from "@/public/images/library/services/database/cockroachlabs.svg";
+import Supabase from "@/public/images/library/services/database/supabase.svg";
+import Neon from "@/public/images/library/services/database/neon.svg";
+import Xata from "@/public/images/library/services/database/butterfly-fill.svg";
 import { cardProps } from "@/types/card.type";
 
 export const dataDatabase: cardProps[] = [

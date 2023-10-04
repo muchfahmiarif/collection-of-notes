@@ -2,15 +2,15 @@ import { SiKoyeb, SiNetlify, SiRailway, SiRender, SiVercel } from "react-icons/s
 import { TbHexagon3D } from "react-icons/tb";
 import { CgServerless } from "react-icons/cg";
 import { AiOutlineCloudServer } from "react-icons/ai";
-import Vercel from "@/public/images/library/server/vercel.svg";
-import Netlify from "@/public/images/library/server/netlify.svg";
-import Qovery from "@/public/images/library/server/qovery.svg";
-import Railway from "@/public/images/library/server/railway.svg";
-import Render from "@/public/images/library/server/render.svg";
-import Cyclic from "@/public/images/library/server/cyclic.svg";
-import FlyIo from "@/public/images/library/server/logo.svg";
-import BigDataCloud from "@/public/images/library/server/bigDataCloud.svg";
-import Koyeb from "@/public/images/library/server/koyeb.svg";
+import Vercel from "@/public/images/library/services/server/vercel.svg";
+import Netlify from "@/public/images/library/services/server/netlify.svg";
+import Qovery from "@/public/images/library/services/server/qovery.svg";
+import Railway from "@/public/images/library/services/server/railway.svg";
+import Render from "@/public/images/library/services/server/render.svg";
+import Cyclic from "@/public/images/library/services/server/cyclic.svg";
+import FlyIo from "@/public/images/library/services/server/logo.svg";
+import BigDataCloud from "@/public/images/library/services/server/bigDataCloud.svg";
+import Koyeb from "@/public/images/library/services/server/koyeb.svg";
 import { cardProps } from "@/types/card.type";
 
 export const dataServer: cardProps[] = [

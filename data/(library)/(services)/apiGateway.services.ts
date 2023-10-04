@@ -2,9 +2,9 @@ import { cardProps } from "@/types/card.type";
 import { SiKong } from "react-icons/si";
 import { IoIosLeaf } from "react-icons/io";
 import { GiOctopus } from "react-icons/gi";
-import SiKongImage from "@/public/images/library/api-gateway/kong.svg";
-import Tyk from "@/public/images/library/api-gateway/tyk.svg";
-import KrakenD from "@/public/images/library/api-gateway/krakend.svg";
+import SiKongImage from "@/public/images/library/services/api-gateway/kong.svg";
+import Tyk from "@/public/images/library/services/api-gateway/tyk.svg";
+import KrakenD from "@/public/images/library/services/api-gateway/krakend.svg";
 
 export const dataAPIGateway: cardProps[] = [
   {

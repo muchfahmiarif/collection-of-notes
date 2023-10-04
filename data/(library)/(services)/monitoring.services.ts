@@ -1,11 +1,11 @@
 import { SiCheckmk, SiDatadog, SiGoogleanalytics, SiGrafana, SiHotjar, SiNewrelic, SiSentry } from "react-icons/si";
-import Hotjar from "@/public/images/library/monitoring/hotjar.svg";
-import GoogleAnalytics from "@/public/images/library/monitoring/googleanalytics.svg";
-import NewRelic from "@/public/images/library/monitoring/newrelic.svg";
-import Sentry from "@/public/images/library/monitoring/sentry.svg";
-import Datadog from "@/public/images/library/monitoring/datadog.svg";
-import Grafana from "@/public/images/library/monitoring/grafana.svg";
-import Checkmk from "@/public/images/library/monitoring/checkmk.svg";
+import Hotjar from "@/public/images/library/services/monitoring/hotjar.svg";
+import GoogleAnalytics from "@/public/images/library/services/monitoring/googleanalytics.svg";
+import NewRelic from "@/public/images/library/services/monitoring/newrelic.svg";
+import Sentry from "@/public/images/library/services/monitoring/sentry.svg";
+import Datadog from "@/public/images/library/services/monitoring/datadog.svg";
+import Grafana from "@/public/images/library/services/monitoring/grafana.svg";
+import Checkmk from "@/public/images/library/services/monitoring/checkmk.svg";
 import { cardProps } from "@/types/card.type";
 
 export const dataMonitoring: cardProps[] = [

@@ -2,14 +2,14 @@ import { SiAuth0, SiAwsamplify, SiFirebase, SiPassport, SiSupabase } from "react
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { FaCircleUser } from "react-icons/fa6";
 import { PiDogFill } from "react-icons/pi";
-import Auth0 from "@/public/images/library/authentication/auth0.svg";
-import Firebase from "@/public/images/library/authentication/firebase.svg";
-import NextAuth from "@/public/images/library/authentication/next-auth.webp";
-import Supabase from "@/public/images/library/authentication/supabase.svg";
-import AWSAmplify from "@/public/images/library/authentication/awsamplify.svg";
-import Clerk from "@/public/images/library/authentication/clerk-logomark-light.svg";
-import Permit from "@/public/images/library/authentication/permit.svg";
-import Passport from "@/public/images/library/authentication/passport.svg";
+import Auth0 from "@/public/images/library/services/authentication/auth0.svg";
+import Firebase from "@/public/images/library/services/authentication/firebase.svg";
+import NextAuth from "@/public/images/library/services/authentication/next-auth.webp";
+import Supabase from "@/public/images/library/services/authentication/supabase.svg";
+import AWSAmplify from "@/public/images/library/services/authentication/awsamplify.svg";
+import Clerk from "@/public/images/library/services/authentication/clerk-logomark-light.svg";
+import Permit from "@/public/images/library/services/authentication/permit.svg";
+import Passport from "@/public/images/library/services/authentication/passport.svg";
 import { cardProps } from "@/types/card.type";
 
 export const dataAuthentication: cardProps[] = [

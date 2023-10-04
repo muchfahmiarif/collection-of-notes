@@ -4,15 +4,15 @@ import { HiMagnifyingGlassCircle } from "react-icons/hi2";
 import { IoShapesOutline } from "react-icons/io5";
 import { FaPenNib } from "react-icons/fa";
 import { TbShield } from "react-icons/tb";
-import FontAwesome from "@/public/images/library/icons/fontawesome.svg";
-import Icon8 from "@/public/images/library/icons/icons8.svg";
-import IconScoutLight from "@/public/images/library/icons/iconscout-light.svg";
-import IconBuddyLight from "@/public/images/library/icons/iconsbuddy-light.png";
-import IconScoutDark from "@/public/images/library/icons/iconscout-dark.svg";
-import IconFinderLight from "@/public/images/library/icons/iconfinder-light.svg";
-import IconFinderDark from "@/public/images/library/icons/iconfinder-dark.svg";
-import IconLucideLight from "@/public/images/library/icons/iconlucide-light.svg";
-import IconLucideDark from "@/public/images/library/icons/iconlucide-dark.svg";
+import FontAwesome from "@/public/images/library/ui/icons/fontawesome.svg";
+import Icon8 from "@/public/images/library/ui/icons/icons8.svg";
+import IconScoutLight from "@/public/images/library/ui/icons/iconscout-light.svg";
+import IconBuddyLight from "@/public/images/library/ui/icons/iconsbuddy-light.png";
+import IconScoutDark from "@/public/images/library/ui/icons/iconscout-dark.svg";
+import IconFinderLight from "@/public/images/library/ui/icons/iconfinder-light.svg";
+import IconFinderDark from "@/public/images/library/ui/icons/iconfinder-dark.svg";
+import IconLucideLight from "@/public/images/library/ui/icons/iconlucide-light.svg";
+import IconLucideDark from "@/public/images/library/ui/icons/iconlucide-dark.svg";
 
 export const dataIcons: cardProps[] = [
   {
