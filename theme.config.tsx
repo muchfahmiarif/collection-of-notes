@@ -70,8 +70,8 @@ const themeConfig: DocsThemeConfig = {
     link: "https://t.me/muchfahmiarif",
   },
   banner: {
-    text: "Join our Discord chat!",
-    key: "discord-banner",
+    text: "🏗 This application still in development.",
+    key: "wip",
   },
 
   // Sidebar
