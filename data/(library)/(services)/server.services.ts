@@ -31,7 +31,7 @@ export const dataServer: cardProps[] = [
     icon: SiNetlify,
     lightImage: Netlify,
     darkImage: Netlify,
-    suggested: false,
+    suggested: true,
     tags: ["nodejs", "api", "serverless"],
   },
   {
@@ -81,7 +81,7 @@ export const dataServer: cardProps[] = [
     icon: CgServerless,
     lightImage: FlyIo,
     darkImage: FlyIo,
-    suggested: false,
+    suggested: true,
     tags: ["vm", "nodejs", "elixir", "rails", "python", "go"],
   },
   {

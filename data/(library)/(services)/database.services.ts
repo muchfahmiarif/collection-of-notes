@@ -21,8 +21,8 @@ export const dataDatabase: cardProps[] = [
     icon: SiMongodb,
     lightImage: MongoDB,
     darkImage: MongoDB,
-    suggested: false,
-    tags: ["nosql"],
+    suggested: true,
+    tags: ["nosql", "mongodb"],
   },
   {
     id: 2,
@@ -31,8 +31,8 @@ export const dataDatabase: cardProps[] = [
     icon: SiFauna,
     lightImage: Fauna,
     darkImage: Fauna,
-    suggested: false,
-    tags: [],
+    suggested: true,
+    tags: ["json"],
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiFirebase,
     lightImage: Firebase,
     darkImage: Firebase,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -51,8 +51,8 @@ export const dataDatabase: cardProps[] = [
     icon: SiSupabase,
     lightImage: Supabase,
     darkImage: Supabase,
-    suggested: false,
-    tags: [],
+    suggested: true,
+    tags: ["postgres", "sql"],
   },
   {
     id: 5,
@@ -61,8 +61,8 @@ export const dataDatabase: cardProps[] = [
     icon: SiPlanetscale,
     lightImage: Planetscale,
     darkImage: Planetscale,
-    suggested: false,
-    tags: [],
+    suggested: true,
+    tags: ["sql"],
   },
   {
     id: 6,
@@ -71,8 +71,8 @@ export const dataDatabase: cardProps[] = [
     icon: HiDatabase,
     lightImage: Neon,
     darkImage: Neon,
-    suggested: false,
-    tags: [],
+    suggested: true,
+    tags: ["sql", "postgres"],
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const dataDatabase: cardProps[] = [
     icon: SiUpstash,
     lightImage: Upstash,
     darkImage: Upstash,
-    suggested: false,
+    suggested: true,
     tags: ["redis", "kafka", "qstash"],
   },
   {
@@ -91,8 +91,8 @@ export const dataDatabase: cardProps[] = [
     icon: PiButterflyFill,
     lightImage: Xata,
     darkImage: Xata,
-    suggested: false,
-    tags: [],
+    suggested: true,
+    tags: ["postgres", "sql"],
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ export const dataDatabase: cardProps[] = [
     lightImage: Cockroachlabs,
     darkImage: Cockroachlabs,
     suggested: false,
-    tags: [],
+    tags: ["sql"],
   },
   {
     id: 10,
