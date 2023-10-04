@@ -41,8 +41,7 @@ const Background = () => {
           "bg-orange-400": currentFramework === "svelte",
           "bg-red-300": currentFramework === "mobile",
           "bg-neutral-300": currentFramework === "desktop",
-        })}
-      />
+        })}></div>
       <Image
         src={assets.gradient}
         alt="gradient background"
