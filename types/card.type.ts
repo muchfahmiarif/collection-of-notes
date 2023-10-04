@@ -13,10 +13,10 @@ export interface cardProps {
   tags: string[];
 }
 
-export const defautSomeType = {
-  suggested: false,
+export const defaultSomeType = {
   icon: HiOutlineSquaresPlus,
   lightImage: DefaultLight,
   darkImage: DefaultDark,
+  suggested: false,
   tags: [],
 };

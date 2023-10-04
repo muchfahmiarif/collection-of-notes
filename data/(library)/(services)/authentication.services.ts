@@ -1,7 +1,10 @@
+import { cardProps, defaultSomeType } from "@/types/card.type";
+
 import { SiAuth0, SiAwsamplify, SiFirebase, SiPassport, SiSupabase } from "react-icons/si";
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { FaCircleUser } from "react-icons/fa6";
 import { PiDogFill } from "react-icons/pi";
+
 import Auth0 from "@/public/images/library/services/authentication/auth0.svg";
 import Firebase from "@/public/images/library/services/authentication/firebase.svg";
 import NextAuth from "@/public/images/library/services/authentication/next-auth.webp";
@@ -10,10 +13,10 @@ import AWSAmplify from "@/public/images/library/services/authentication/awsampli
 import Clerk from "@/public/images/library/services/authentication/clerk-logomark-light.svg";
 import Permit from "@/public/images/library/services/authentication/permit.svg";
 import Passport from "@/public/images/library/services/authentication/passport.svg";
-import { cardProps } from "@/types/card.type";
 
 export const dataAuthentication: cardProps[] = [
   {
+    ...defaultSomeType,
     id: 1,
     name: "Auth0",
     url: "https://auth0.com/",
@@ -24,6 +27,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 2,
     name: "Firebase",
     url: "https://firebase.google.com/docs/auth",
@@ -34,6 +38,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 3,
     name: "Next Auth",
     url: "https://next-auth.js.org/",
@@ -44,6 +49,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 4,
     name: "Supabase",
     url: "https://supabase.com/auth",
@@ -54,6 +60,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 5,
     name: "AWS Amplify",
     url: "https://aws.amazon.com/amplify/",
@@ -64,6 +71,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 6,
     name: "Clerk",
     url: "https://clerk.dev/",
@@ -74,6 +82,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 7,
     name: "Permit",
     url: "https://www.permit.io/",
@@ -84,6 +93,7 @@ export const dataAuthentication: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 8,
     name: "Passport",
     url: "http://www.passportjs.org/",
