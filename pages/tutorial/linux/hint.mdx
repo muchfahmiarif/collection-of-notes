@@ -1,0 +1,48 @@
+import { Callout, Tabs } from "nextra/components";
+
+<Callout type="info" emoji="ℹ️">
+  Today is Friday.
+</Callout>
+
+## Install package `.deb`
+
+If you have a `.deb` file and want to install it you can choose between two options using terminal or GUI. This my opinion from each other :
+
+<Tabs items={["GUI", "terminal"]}>
+  <Tabs.Tab>`takes a long time with GUI`</Tabs.Tab>
+  <Tabs.Tab>`need specific folder for install package` `time for install too quick`</Tabs.Tab>
+</Tabs>
+
+### This list how to use `dpkg`
+
+1. Install package
+
+```bash
+sudo dpkg -i [name_package.deb]
+```
+
+2. View list of installed packages
+
+```bash
+dpkg -l
+```
+
+3. Verify package
+
+```bash
+dpkg --status [package_name]
+```
+
+4. Remove package using `dpkg`
+
+```bash
+dpkg -l | grep keyword #To find out the exact package name
+```
+
+```bash
+sudo dpkg -r [package_name] #or sudo dpkg --remove [package_name]
+```
+
+## Intall theme dracula
+
+In this case i follow from [this vidio](https://www.youtube.com/watch?v=5b-xQkRWHjQ)
