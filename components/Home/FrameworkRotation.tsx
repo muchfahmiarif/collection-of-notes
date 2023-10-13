@@ -1,16 +1,15 @@
-import { assets } from "@/lib/assets";
-import { frameworks, type Framework } from "@/utils/frameworks";
+import { type Framework, frameworks, assets } from "@/lib/frameworks";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
-import { cn } from "@/lib/utils";
 
-type FrameworkRotationProps = {
+interface FrameworkRotationProps {
   currentFramework: Framework;
-};
+}
 
-const FrameworkRotation: React.FC<FrameworkRotationProps> = ({ currentFramework }) => {
+export const FrameworkRotation: React.FC<FrameworkRotationProps> = ({ currentFramework }) => {
   return (
-    <div className="w-[80px] h-[80px] mx-2 -mt-2 align-middle inline-flex relative">
+    <div className="w-[80px] h-[80px] align-middle -mt-2 mx-2 inline-flex relative">
       {frameworks.map((name, index) => (
         <Image
           key={index}
@@ -19,7 +18,7 @@ const FrameworkRotation: React.FC<FrameworkRotationProps> = ({ currentFramework 
           width={80}
           height={80}
           className={cn(
-            "w-full h-full object-contain absolute object-center top-0 left-0 transition-all duration-300",
+            "w-full h-full object-center absolute top-0 object-contain left-0 transition-all duration-300",
             currentFramework === name
               ? "opacity-100 transform-none"
               : index > frameworks.indexOf(currentFramework as Framework)
@@ -31,5 +30,3 @@ const FrameworkRotation: React.FC<FrameworkRotationProps> = ({ currentFramework 
     </div>
   );
 };
-
-export default FrameworkRotation;
