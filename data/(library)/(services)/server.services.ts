@@ -5,7 +5,8 @@ import { TbHexagon3D } from "react-icons/tb";
 import { CgServerless } from "react-icons/cg";
 import { AiOutlineCloudServer } from "react-icons/ai";
 
-import Vercel from "@/public/images/library/services/server/vercel.svg";
+import VercelLight from "@/public/images/library/services/server/vercel-light.svg";
+import VercelDark from "@/public/images/library/services/server/vercel-dark.svg";
 import Netlify from "@/public/images/library/services/server/netlify.svg";
 import Qovery from "@/public/images/library/services/server/qovery.svg";
 import Railway from "@/public/images/library/services/server/railway.svg";
@@ -22,8 +23,8 @@ export const dataServer: cardProps[] = [
     name: "Vercel",
     url: "https://vercel.com",
     icon: SiVercel,
-    lightImage: Vercel,
-    darkImage: Vercel,
+    lightImage: VercelLight,
+    darkImage: VercelDark,
     suggested: true,
     tags: ["nodejs", "api", "serverless", "ci-cd"],
   },

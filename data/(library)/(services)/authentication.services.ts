@@ -4,6 +4,7 @@ import { SiAuth0, SiAwsamplify, SiFirebase, SiPassport, SiSupabase } from "react
 import { BsFillShieldLockFill } from "react-icons/bs";
 import { FaCircleUser } from "react-icons/fa6";
 import { PiDogFill } from "react-icons/pi";
+import { TbSquareLetterK } from "react-icons/tb";
 
 import Auth0 from "@/public/images/library/services/authentication/auth0.svg";
 import Firebase from "@/public/images/library/services/authentication/firebase.svg";
@@ -13,6 +14,7 @@ import AWSAmplify from "@/public/images/library/services/authentication/awsampli
 import Clerk from "@/public/images/library/services/authentication/clerk-logomark-light.svg";
 import Permit from "@/public/images/library/services/authentication/permit.svg";
 import Passport from "@/public/images/library/services/authentication/passport.svg";
+import KindeLight from "@/public/images/library/services/authentication/kinde-light.svg";
 
 export const dataAuthentication: cardProps[] = [
   {
@@ -23,7 +25,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiAuth0,
     lightImage: Auth0,
     darkImage: Auth0,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -34,7 +36,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiFirebase,
     lightImage: Firebase,
     darkImage: Firebase,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -45,7 +47,7 @@ export const dataAuthentication: cardProps[] = [
     icon: BsFillShieldLockFill,
     lightImage: NextAuth,
     darkImage: NextAuth,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -56,7 +58,7 @@ export const dataAuthentication: cardProps[] = [
     icon: SiSupabase,
     lightImage: Supabase,
     darkImage: Supabase,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -78,7 +80,7 @@ export const dataAuthentication: cardProps[] = [
     icon: FaCircleUser,
     lightImage: Clerk,
     darkImage: Clerk,
-    suggested: false,
+    suggested: true,
     tags: [],
   },
   {
@@ -102,5 +104,12 @@ export const dataAuthentication: cardProps[] = [
     darkImage: Passport,
     suggested: false,
     tags: [],
+  },
+  {
+    ...defaultSomeType,
+    id: 9,
+    name: "Kinde",
+    url: "https://kinde.com/",
+    icon: TbSquareLetterK,
   },
 ];

@@ -1,6 +1,6 @@
 import { cardProps, defaultSomeType } from "@/types/card.type";
 
-import { SiFauna, SiFirebase, SiMongodb, SiSupabase, SiPlanetscale, SiUpstash, SiCockroachlabs, SiAmazondocumentdb } from "react-icons/si";
+import { SiFauna, SiFirebase, SiMongodb, SiSupabase, SiPlanetscale, SiUpstash, SiCockroachlabs, SiAmazondocumentdb, SiVercel } from "react-icons/si";
 import { HiDatabase } from "react-icons/hi";
 import { PiButterflyFill } from "react-icons/pi";
 
@@ -8,12 +8,15 @@ import FacebookImage from "@/public/images/facebook.svg";
 import MongoDB from "@/public/images/library/services/database/mongodb.svg";
 import Fauna from "@/public/images/library/services/database/fauna.svg";
 import Firebase from "@/public/images/library/services/database/firebase.svg";
-import Planetscale from "@/public/images/library/services/database/planetscale.svg";
+import PlanetscaleLight from "@/public/images/library/services/database/planetscale-light.svg";
+import PlanetscaleDark from "@/public/images/library/services/database/planetscale-dark.svg";
 import Upstash from "@/public/images/library/services/database/upstash.svg";
 import Cockroachlabs from "@/public/images/library/services/database/cockroachlabs.svg";
 import Supabase from "@/public/images/library/services/database/supabase.svg";
 import Neon from "@/public/images/library/services/database/neon.svg";
 import Xata from "@/public/images/library/services/database/butterfly-fill.svg";
+import VercelLight from "@/public/images/library/services/server/vercel-light.svg";
+import VercelDark from "@/public/images/library/services/server/vercel-dark.svg";
 
 export const dataDatabase: cardProps[] = [
   {
@@ -66,8 +69,8 @@ export const dataDatabase: cardProps[] = [
     name: "Planetscale",
     url: "https://planetscale.com/",
     icon: SiPlanetscale,
-    lightImage: Planetscale,
-    darkImage: Planetscale,
+    lightImage: PlanetscaleLight,
+    darkImage: PlanetscaleDark,
     suggested: true,
     tags: ["sql"],
   },
@@ -121,8 +124,6 @@ export const dataDatabase: cardProps[] = [
     name: "Amazon Aurora",
     url: "https://aws.amazon.com/aurora/",
     icon: SiAmazondocumentdb,
-    lightImage: FacebookImage,
-    darkImage: FacebookImage,
     suggested: false,
     tags: [],
   },
@@ -132,9 +133,17 @@ export const dataDatabase: cardProps[] = [
     name: "Amazon DynamoDB",
     url: "https://aws.amazon.com/dynamodb/",
     icon: SiAmazondocumentdb,
-    lightImage: FacebookImage,
-    darkImage: FacebookImage,
     suggested: false,
     tags: [],
+  },
+  {
+    ...defaultSomeType,
+    id: 12,
+    name: "Vercel Database",
+    url: "https://vercel.com/storage",
+    icon: SiVercel,
+    lightImage: VercelLight,
+    darkImage: VercelDark,
+    tags: ["redis", "postgres"],
   },
 ];

@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "@/components/Cards";
 import { dataAPIGateway } from "@/data/(library)/(services)/apiGateway.services";
 
-const AuthenticationCards = () => {
+const ApiGatewayCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
@@ -24,4 +24,4 @@ const AuthenticationCards = () => {
   );
 };
 
-export default AuthenticationCards;
+export default ApiGatewayCards;

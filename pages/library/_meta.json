@@ -36,5 +36,8 @@
   },
   "toast": {
     "title": "Toast"
+  },
+  "components-tailwind": {
+    "title": "Tailwind"
   }
 }
