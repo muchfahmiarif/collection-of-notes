@@ -1,12 +1,11 @@
-import React from "react";
 import Cards from "@/components/Cards";
-import { dataToast } from "@/data/(library)/(ui)/toast.ui";
+import { dataComponentsTailwind } from "@/data/(library)/(ui)/componentsTailwind";
 
-const ToastCards = () => {
+export const ComponentsTailwindCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {dataToast.map((item) => (
+        {dataComponentsTailwind.map((item) => (
           <Cards
             key={item.id}
             id={item.id}
@@ -23,5 +22,3 @@ const ToastCards = () => {
     </>
   );
 };
-
-export default ToastCards;

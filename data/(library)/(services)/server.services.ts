@@ -1,8 +1,12 @@
+import { cardProps, defaultSomeType } from "@/types/card.type";
+
 import { SiKoyeb, SiNetlify, SiRailway, SiRender, SiVercel } from "react-icons/si";
 import { TbHexagon3D } from "react-icons/tb";
 import { CgServerless } from "react-icons/cg";
 import { AiOutlineCloudServer } from "react-icons/ai";
-import Vercel from "@/public/images/library/services/server/vercel.svg";
+
+import VercelLight from "@/public/images/library/services/server/vercel-light.svg";
+import VercelDark from "@/public/images/library/services/server/vercel-dark.svg";
 import Netlify from "@/public/images/library/services/server/netlify.svg";
 import Qovery from "@/public/images/library/services/server/qovery.svg";
 import Railway from "@/public/images/library/services/server/railway.svg";
@@ -11,20 +15,21 @@ import Cyclic from "@/public/images/library/services/server/cyclic.svg";
 import FlyIo from "@/public/images/library/services/server/logo.svg";
 import BigDataCloud from "@/public/images/library/services/server/bigDataCloud.svg";
 import Koyeb from "@/public/images/library/services/server/koyeb.svg";
-import { cardProps } from "@/types/card.type";
 
 export const dataServer: cardProps[] = [
   {
+    ...defaultSomeType,
     id: 1,
     name: "Vercel",
     url: "https://vercel.com",
     icon: SiVercel,
-    lightImage: Vercel,
-    darkImage: Vercel,
+    lightImage: VercelLight,
+    darkImage: VercelDark,
     suggested: true,
     tags: ["nodejs", "api", "serverless", "ci-cd"],
   },
   {
+    ...defaultSomeType,
     id: 2,
     name: "Netlify",
     url: "https://netlify.com",
@@ -35,6 +40,7 @@ export const dataServer: cardProps[] = [
     tags: ["nodejs", "api", "serverless"],
   },
   {
+    ...defaultSomeType,
     id: 3,
     name: "Qovery",
     url: "https://qovery.com",
@@ -45,6 +51,7 @@ export const dataServer: cardProps[] = [
     tags: ["AWS"],
   },
   {
+    ...defaultSomeType,
     id: 4,
     name: "Railway",
     url: "https://railway.app",
@@ -55,6 +62,7 @@ export const dataServer: cardProps[] = [
     tags: ["laravel", "nodejs", "api", "serverless"],
   },
   {
+    ...defaultSomeType,
     id: 5,
     name: "Render",
     url: "https://render.com",
@@ -65,6 +73,7 @@ export const dataServer: cardProps[] = [
     tags: ["database", "docker", "nodejs", "api"],
   },
   {
+    ...defaultSomeType,
     id: 6,
     name: "Cyclic",
     url: "https://cyclic.sh",
@@ -75,6 +84,7 @@ export const dataServer: cardProps[] = [
     tags: ["serverless", "nodejs", "python", "go"],
   },
   {
+    ...defaultSomeType,
     id: 7,
     name: "Fly.io",
     url: "https://fly.io",
@@ -85,6 +95,7 @@ export const dataServer: cardProps[] = [
     tags: ["vm", "nodejs", "elixir", "rails", "python", "go"],
   },
   {
+    ...defaultSomeType,
     id: 8,
     name: "Big Data Cloud",
     url: "https://www.bigdatacloud.com",
@@ -95,6 +106,7 @@ export const dataServer: cardProps[] = [
     tags: ["api"],
   },
   {
+    ...defaultSomeType,
     id: 9,
     name: "Koyeb",
     url: "https://www.koyeb.com",

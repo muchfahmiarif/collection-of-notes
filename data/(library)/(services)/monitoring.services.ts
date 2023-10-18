@@ -1,4 +1,7 @@
+import { type cardProps, defaultSomeType } from "@/types/card.type";
+
 import { SiCheckmk, SiDatadog, SiGoogleanalytics, SiGrafana, SiHotjar, SiNewrelic, SiSentry } from "react-icons/si";
+
 import Hotjar from "@/public/images/library/services/monitoring/hotjar.svg";
 import GoogleAnalytics from "@/public/images/library/services/monitoring/googleanalytics.svg";
 import NewRelic from "@/public/images/library/services/monitoring/newrelic.svg";
@@ -6,10 +9,10 @@ import Sentry from "@/public/images/library/services/monitoring/sentry.svg";
 import Datadog from "@/public/images/library/services/monitoring/datadog.svg";
 import Grafana from "@/public/images/library/services/monitoring/grafana.svg";
 import Checkmk from "@/public/images/library/services/monitoring/checkmk.svg";
-import { cardProps } from "@/types/card.type";
 
 export const dataMonitoring: cardProps[] = [
   {
+    ...defaultSomeType,
     id: 1,
     name: "Hotjar",
     url: "https://hotjar.com",
@@ -20,6 +23,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 2,
     name: "Google Analytics",
     url: "https://analytics.google.com",
@@ -30,6 +34,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 3,
     name: "New Relic",
     url: "https://newrelic.com",
@@ -40,6 +45,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 4,
     name: "Sentry",
     url: "https://sentry.io",
@@ -50,6 +56,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 5,
     name: "DataDog",
     url: "https://datadoghq.com",
@@ -60,6 +67,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 6,
     name: "Grafana",
     url: "https://grafana.com",
@@ -70,6 +78,7 @@ export const dataMonitoring: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 7,
     name: "Checkmk",
     url: "https://checkmk.com",

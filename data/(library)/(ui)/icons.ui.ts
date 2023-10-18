@@ -1,10 +1,9 @@
-import { cardProps } from "@/types/card.type";
+import { cardProps, defaultSomeType } from "@/types/card.type";
 import { SiFontawesome, SiIconfinder, SiIcons8, SiReact, SiUpstash } from "react-icons/si";
 import { HiMagnifyingGlassCircle } from "react-icons/hi2";
 import { IoShapesOutline } from "react-icons/io5";
 import { FaPenNib } from "react-icons/fa";
 import { TbShield } from "react-icons/tb";
-import { defautSomeType } from "@/types/card.type";
 
 import FontAwesome from "@/public/images/library/ui/icons/fontawesome.svg";
 import Icon8 from "@/public/images/library/ui/icons/icons8.svg";
@@ -24,7 +23,7 @@ import TablerIconDark from "@/public/images/library/ui/icons/tabler-icons-dark.s
 
 export const dataIcons: cardProps[] = [
   {
-    ...defautSomeType,
+    ...defaultSomeType,
     id: 1,
     name: "Font Awesome",
     url: "https://fontawesome.com/",
@@ -34,7 +33,7 @@ export const dataIcons: cardProps[] = [
     tags: [],
   },
   {
-    ...defautSomeType,
+    ...defaultSomeType,
     id: 2,
     name: "Icon Buddy",
     url: "https://iconbuddy.app/",

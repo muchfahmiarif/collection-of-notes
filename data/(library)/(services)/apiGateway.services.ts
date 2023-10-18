@@ -1,4 +1,4 @@
-import { cardProps } from "@/types/card.type";
+import { cardProps, defaultSomeType } from "@/types/card.type";
 import { SiKong } from "react-icons/si";
 import { IoIosLeaf } from "react-icons/io";
 import { GiOctopus } from "react-icons/gi";
@@ -8,6 +8,7 @@ import KrakenD from "@/public/images/library/services/api-gateway/krakend.svg";
 
 export const dataAPIGateway: cardProps[] = [
   {
+    ...defaultSomeType,
     id: 1,
     name: "Konghq",
     url: "https://konghq.com/kong/",
@@ -18,6 +19,7 @@ export const dataAPIGateway: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 2,
     name: "Tyk",
     url: "https://tyk.io/",
@@ -28,6 +30,7 @@ export const dataAPIGateway: cardProps[] = [
     tags: [],
   },
   {
+    ...defaultSomeType,
     id: 3,
     name: "KrakenD",
     url: "https://www.krakend.io/",

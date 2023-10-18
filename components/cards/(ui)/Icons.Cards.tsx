@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { dataIcons } from "@/data/(library)/(ui)/icons.ui";
 import Cards from "@/components/Cards";
 
-const DatabaseCards = () => {
+const IconsCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
@@ -24,4 +24,4 @@ const DatabaseCards = () => {
   );
 };
 
-export default DatabaseCards;
+export default IconsCards;

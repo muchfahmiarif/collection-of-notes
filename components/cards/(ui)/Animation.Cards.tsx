@@ -1,12 +1,12 @@
-import React from "react";
 import Cards from "@/components/Cards";
-import { dataToast } from "@/data/(library)/(ui)/toast.ui";
+import { dataAnimation } from "@/data/(library)/(ui)/animation.ui";
+import React from "react";
 
-const ToastCards = () => {
+const AnimationCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {dataToast.map((item) => (
+        {dataAnimation.map((item) => (
           <Cards
             key={item.id}
             id={item.id}
@@ -24,4 +24,4 @@ const ToastCards = () => {
   );
 };
 
-export default ToastCards;
+export default AnimationCards;
