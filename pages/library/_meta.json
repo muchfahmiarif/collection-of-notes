@@ -42,9 +42,12 @@
   },
   "---": {
     "type": "separator",
-    "title": "React"
+    "title": "React / Vue"
   },
-  "react-ui": {
-    "title": "React UI"
+  "frameworks": {
+    "title": "Frameworks"
+  },
+  "ui-components": {
+    "title": "UI Components"
   }
 }

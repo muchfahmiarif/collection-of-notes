@@ -1,33 +1,33 @@
 import { cardProps, defaultSomeType } from "@/types/card.type";
 
-export const dataReactUI: cardProps[] = [
+export const dataUIComponents: cardProps[] = [
   {
     ...defaultSomeType,
     id: 1,
     name: "React Bootstrap",
     url: "https://react-bootstrap.github.io/",
-    tags: [],
+    tags: ["bootstrap", "react"],
   },
   {
     ...defaultSomeType,
     id: 2,
     name: "Core UI",
     url: "https://coreui.io/react/",
-    tags: [],
+    tags: ["react"],
   },
   {
     ...defaultSomeType,
     id: 3,
     name: "Prime React",
     url: "https://www.primefaces.org/primereact/",
-    tags: [],
+    tags: ["react", "tailwindcss"],
   },
   {
     ...defaultSomeType,
     id: 4,
     name: "React Material UI",
     url: "https://mui.com/material-ui/",
-    tags: [],
+    tags: ["react"],
   },
   {
     ...defaultSomeType,
@@ -106,5 +106,12 @@ export const dataReactUI: cardProps[] = [
     url: "https://nextui.org/",
     suggested: true,
     tags: ["animated"],
+  },
+  {
+    ...defaultSomeType,
+    id: 16,
+    name: "Float UI",
+    url: "https://floatui.com/",
+    tags: ["tailwind", "vue"],
   },
 ];

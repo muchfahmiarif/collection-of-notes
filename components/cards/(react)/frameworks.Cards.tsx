@@ -1,12 +1,12 @@
 import React from "react";
 import Cards from "@/components/Cards";
-import { dataUIComponents } from "@/data/(library)/(react)/react-ui.react";
+import { dataFrameworks } from "@/data/(library)/(react)/frameworks.react";
 
 const ApiGatewayCards = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {dataUIComponents.map((item) => (
+        {dataFrameworks.map((item) => (
           <Cards
             key={item.id}
             id={item.id}
