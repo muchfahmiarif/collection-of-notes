@@ -5,7 +5,7 @@
       "breadcrumb": false
     }
   },
-  "--": {
+  "-": {
     "type": "separator",
     "title": "Services"
   },
@@ -27,7 +27,7 @@
   "server": {
     "title": "Server"
   },
-  "-": {
+  "--": {
     "type": "separator",
     "title": "UI"
   },
@@ -39,5 +39,12 @@
   },
   "components-tailwind": {
     "title": "Tailwind"
+  },
+  "---": {
+    "type": "separator",
+    "title": "React"
+  },
+  "react-ui": {
+    "title": "React UI"
   }
 }
