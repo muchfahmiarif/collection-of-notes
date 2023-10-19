@@ -15,7 +15,7 @@ const Hero = () => {
       setCurrentFramework(frameworks[index]);
       index = (index + 1) % frameworks.length;
     };
-    const interval = setInterval(rotateFramework, 1500);
+    const interval = setInterval(rotateFramework, 3000);
     return () => clearInterval(interval);
   }, []);
 

@@ -5,6 +5,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+interface NavbarProps {
+  className?: string;
+}
+
 const navItems = [
   {
     path: "/",
@@ -24,7 +28,7 @@ const navItems = [
   },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC<NavbarProps> = ({ className }) => {
   let pathname = usePathname() || "/";
   const [hoverPath, setHoverPath] = useState(pathname);
 
@@ -33,7 +37,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="border border-stone-800/90 p-[0.4rem] rounded-lg sticky top-4 z-[100] bg-stone-900/80 backdrop-blur-md">
+    <div className={`border border-stone-800/90 p-[0.4rem] rounded-lg sticky top-4 z-[100] bg-stone-900/80 backdrop-blur-md ${className}`}>
       <nav className="flex gap-2 relative justify-start w-full z-[100] rounded-lg">
         {navItems.map((item, index) => {
           const isActive = item.path === pathname;
