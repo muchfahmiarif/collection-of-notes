@@ -10,5 +10,9 @@
   "library": {
     "title": "Library",
     "type": "page"
+  },
+  "course": {
+    "title": "Course",
+    "type": "page"
   }
 }
