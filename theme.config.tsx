@@ -45,13 +45,26 @@ const themeConfig: DocsThemeConfig = {
   // Navbar
   logo: (
     <>
-      <svg width="24" height="24" viewBox="0 0 24 24">
+      <svg width="33.125" height="30" viewBox="0 0 1696 1536" xmlns="http://www.w3.org/2000/svg">
         <path
-          fill="currentColor"
-          d="M14.683 14.828a4.055 4.055 0 0 1-1.272.858a4.002 4.002 0 0 1-4.875-1.45l-1.658 1.119a6.063 6.063 0 0 0 1.621 1.62a5.963 5.963 0 0 0 2.148.903a6.035 6.035 0 0 0 3.542-.35a6.048 6.048 0 0 0 1.907-1.284c.272-.271.52-.571.734-.889l-1.658-1.119a4.147 4.147 0 0 1-.489.592z M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 2c2.953 0 5.531 1.613 6.918 4H5.082C6.469 5.613 9.047 4 12 4zm0 16c-4.411 0-8-3.589-8-8c0-.691.098-1.359.264-2H5v1a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2h2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h.736c.166.641.264 1.309.264 2c0 4.411-3.589 8-8 8z"
+          fill="#0ea5e9"
+          d="M1671 350q40 57 18 129l-275 906q-19 64-76.5 107.5T1215 1536H292q-77 0-148.5-53.5T44 1351q-24-67-2-127q0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5T84 1051q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5T372 283q1-8-3-25.5t-2-26.5q2-8 9-18t18-23t17-21q8-12 16.5-30.5t15-35t16-36t19.5-32T504.5 12t36-11.5T588 6l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5T1057 1280H188q-27 0-38 15q-11 16-1 43q24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57q38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1279 352l21-64q4-13-2-22.5t-20-9.5H670q-13 0-25.5 9.5T628 288zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5T1196 608l21-64q4-13-2-22.5t-20-9.5H587q-13 0-25.5 9.5T545 544z"
         />
       </svg>
-      <span style={{ marginLeft: ".4em", fontWeight: 800 }}>My Cool Project</span>
+      <span className="pl-3 text-2xl font-semibold">Small Notes</span>
+      <style jsx>{`
+        span,
+        svg {
+          mask-image: linear-gradient(60deg, black 25%, rgba(0, 0, 0, 0.2) 50%, black 75%);
+          mask-size: 400%;
+          mask-position: 0%;
+        }
+        span:hover,
+        svg:hover {
+          mask-position: 100%;
+          transition: mask-position 1s ease, -webkit-mask-position 1s ease;
+        }
+      `}</style>
     </>
   ),
   logoLink: "/",
@@ -91,14 +104,14 @@ const themeConfig: DocsThemeConfig = {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{" "}
-        <a href="https://nextra.site" target="_blank" className="hover:text-blue-500">
+        <a href="https://github.com/muchfahmiarif" target="_blank" className="hover:text-blue-500">
           Documentation
         </a>
         .
       </span>
     ),
   },
-  faviconGlyph: "📚",
+  faviconGlyph: "📝",
 };
 
 export default themeConfig;
