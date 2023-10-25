@@ -34,11 +34,14 @@
   "ui-icons": {
     "title": "Icons"
   },
-  "ui-toast": {
-    "title": "Toast"
-  },
   "ui-tailwind": {
     "title": "Tailwind"
+  },
+  "ui-theme-design": {
+    "title": "Theme Design"
+  },
+  "ui-toast": {
+    "title": "Toast"
   },
   "---": {
     "type": "separator",
