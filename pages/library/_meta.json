@@ -9,35 +9,35 @@
     "type": "separator",
     "title": "Services"
   },
-  "api-gateway": {
+  "services-api-gateway": {
     "title": "API Gateway"
   },
-  "authentication": {
+  "services-authentication": {
     "title": "Authentication"
   },
-  "database": {
+  "services-database": {
     "title": "Database"
   },
-  "monitoring": {
+  "services-monitoring": {
     "title": "Monitoring"
   },
-  "smtp": {
+  "services-smtp": {
     "title": "SMTP"
   },
-  "server": {
+  "services-server": {
     "title": "Server"
   },
   "--": {
     "type": "separator",
     "title": "UI"
   },
-  "icons": {
+  "ui-icons": {
     "title": "Icons"
   },
-  "toast": {
+  "ui-toast": {
     "title": "Toast"
   },
-  "components-tailwind": {
+  "ui-tailwind": {
     "title": "Tailwind"
   },
   "---": {
