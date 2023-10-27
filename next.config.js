@@ -11,7 +11,7 @@ const nextConfig = require("nextra")({
 
 module.exports = nextConfig({
   images: {
-    domains: ["cdn.builder.io"],
+    domains: ["cdn.builder.io", "images.unsplash.com"],
     dangerouslyAllowSVG: true,
   },
 });
