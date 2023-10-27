@@ -112,4 +112,11 @@ export const dataAuthentication: cardProps[] = [
     url: "https://kinde.com/",
     icon: TbSquareLetterK,
   },
+  {
+    ...defaultSomeType,
+    id: 10,
+    name: "Feathers Auth Management",
+    url: "https://feathers-a-m.netlify.app/",
+    tags: [],
+  },
 ];
