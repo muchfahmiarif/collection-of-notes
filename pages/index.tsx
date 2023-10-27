@@ -4,7 +4,7 @@ import { poppins } from "./_app";
 
 export default function Home() {
   return (
-    <div className={poppins.className}>
+    <div>
       {/* <Navbar /> */}
       <Hero />
     </div>
