@@ -31,6 +31,9 @@
     "type": "separator",
     "title": "UI"
   },
+  "ui-generator": {
+    "title": "Generator"
+  },
   "ui-icons": {
     "title": "Icons"
   },
