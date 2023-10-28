@@ -18,6 +18,9 @@
   "services-database": {
     "title": "Database"
   },
+  "services-i18n": {
+    "title": "I18n"
+  },
   "services-monitoring": {
     "title": "Monitoring"
   },
