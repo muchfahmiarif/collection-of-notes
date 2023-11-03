@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       {/* <Navbar /> */}
-      <NavigationMenuDemo />
+      {/* <NavigationMenuDemo /> */}
       {/* <Hero /> */}
       <TrialHome />
     </div>
