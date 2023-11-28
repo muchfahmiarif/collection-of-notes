@@ -46,6 +46,9 @@
   "ui-icons": {
     "title": "Icons"
   },
+  "ui-image": {
+    "title": "Image"
+  },
   "ui-tailwind": {
     "title": "Tailwind"
   },
