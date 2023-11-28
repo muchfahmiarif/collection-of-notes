@@ -24,11 +24,14 @@
   "services-monitoring": {
     "title": "Monitoring"
   },
-  "services-smtp": {
-    "title": "SMTP"
+  "services-page-builder": {
+    "title": "Page Builder"
   },
   "services-server": {
     "title": "Server"
+  },
+  "services-smtp": {
+    "title": "SMTP"
   },
   "--": {
     "type": "separator",
