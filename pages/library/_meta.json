@@ -37,6 +37,9 @@
     "type": "separator",
     "title": "UI"
   },
+  "ui-carousel": {
+    "title": "Carousel"
+  },
   "ui-generator": {
     "title": "Generator"
   },
@@ -59,7 +62,7 @@
   "frameworks": {
     "title": "Frameworks"
   },
-  "ui-components": {
-    "title": "UI Components"
+  "ui-components-react-vue": {
+    "title": "Components"
   }
 }
