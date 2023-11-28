@@ -1,11 +1,11 @@
 import Cards from "@/components/Cards";
-import { dataComponentsTailwind } from "@/data/(library)/(ui)/componentsTailwind";
+import { dataPluginTailwind } from "@/data/(library)/(ui)/pluginTailwind";
 
-export const ComponentsTailwindCards = () => {
+const VanillaComponentsTailwind = () => {
   return (
     <>
       <div className="grid grid-cols-3 gap-4 my-4">
-        {dataComponentsTailwind.map((item) => (
+        {dataPluginTailwind.map((item) => (
           <Cards
             key={item.id}
             id={item.id}
@@ -22,3 +22,5 @@ export const ComponentsTailwindCards = () => {
     </>
   );
 };
+
+export default VanillaComponentsTailwind;

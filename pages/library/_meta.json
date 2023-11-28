@@ -18,18 +18,27 @@
   "services-database": {
     "title": "Database"
   },
+  "services-i18n": {
+    "title": "I18n"
+  },
   "services-monitoring": {
     "title": "Monitoring"
   },
-  "services-smtp": {
-    "title": "SMTP"
+  "services-page-builder": {
+    "title": "Page Builder"
   },
   "services-server": {
     "title": "Server"
   },
+  "services-smtp": {
+    "title": "SMTP"
+  },
   "--": {
     "type": "separator",
     "title": "UI"
+  },
+  "ui-carousel": {
+    "title": "Carousel"
   },
   "ui-generator": {
     "title": "Generator"
@@ -53,7 +62,7 @@
   "frameworks": {
     "title": "Frameworks"
   },
-  "ui-components": {
-    "title": "UI Components"
+  "ui-components-react-vue": {
+    "title": "Components"
   }
 }
