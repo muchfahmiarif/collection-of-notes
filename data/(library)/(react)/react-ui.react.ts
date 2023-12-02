@@ -114,4 +114,11 @@ export const dataUIComponents: cardProps[] = [
     url: "https://floatui.com/",
     tags: ["tailwind", "vue"],
   },
+  {
+    ...defaultSomeType,
+    id: 17,
+    name: "Keep React",
+    url: "https://react.keepdesign.io/",
+    tags: ["tailwind", "react"],
+  },
 ];

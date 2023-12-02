@@ -58,4 +58,18 @@ export const dataGenerator: cardProps[] = [
     url: "https://imgflip.com/memetemplates",
     tags: ["meme", "picture"],
   },
+  {
+    ...defaultSomeType,
+    id: 8,
+    name: "Hero Patterns",
+    url: "https://www.heropatterns.com/",
+    tags: ["pattern", "background"],
+  },
+  {
+    ...defaultSomeType,
+    id: 9,
+    name: "Clone UI",
+    url: "https://clone-ui.design/",
+    tags: ["ui", "template", "html"],
+  },
 ];

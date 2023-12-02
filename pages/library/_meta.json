@@ -12,6 +12,9 @@
   "services-api-gateway": {
     "title": "API Gateway"
   },
+  "services-api-client": {
+    "title": "API Client"
+  },
   "services-authentication": {
     "title": "Authentication"
   },
@@ -46,6 +49,9 @@
   "ui-icons": {
     "title": "Icons"
   },
+  "ui-image": {
+    "title": "Image"
+  },
   "ui-tailwind": {
     "title": "Tailwind"
   },
@@ -64,5 +70,12 @@
   },
   "ui-components-react-vue": {
     "title": "Components"
+  },
+  "----": {
+    "type": "separator",
+    "title": "Miscellaneous"
+  },
+  "misc-applications": {
+    "title": "Applications"
   }
 }
