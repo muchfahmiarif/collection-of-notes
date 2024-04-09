@@ -66,17 +66,6 @@ export const dataDatabase: cardProps[] = [
   {
     ...defaultSomeType,
     id: 5,
-    name: "Planetscale",
-    url: "https://planetscale.com/",
-    icon: SiPlanetscale,
-    lightImage: PlanetscaleLight,
-    darkImage: PlanetscaleDark,
-    suggested: true,
-    tags: ["sql"],
-  },
-  {
-    ...defaultSomeType,
-    id: 6,
     name: "Neon Tech",
     url: "https://neon.tech/",
     icon: HiDatabase,
@@ -87,7 +76,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 7,
+    id: 6,
     name: "Upstash",
     url: "https://upstash.com/",
     icon: SiUpstash,
@@ -98,7 +87,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 8,
+    id: 7,
     name: "Xata",
     url: "https://xata.io/",
     icon: PiButterflyFill,
@@ -109,7 +98,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 9,
+    id: 8,
     name: "Cockroach DB",
     url: "https://www.cockroachlabs.com/",
     icon: SiCockroachlabs,
@@ -120,7 +109,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 10,
+    id: 9,
     name: "Amazon Aurora",
     url: "https://aws.amazon.com/aurora/",
     icon: SiAmazondocumentdb,
@@ -129,7 +118,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 11,
+    id: 10,
     name: "Amazon DynamoDB",
     url: "https://aws.amazon.com/dynamodb/",
     icon: SiAmazondocumentdb,
@@ -138,7 +127,7 @@ export const dataDatabase: cardProps[] = [
   },
   {
     ...defaultSomeType,
-    id: 12,
+    id: 11,
     name: "Vercel Database",
     url: "https://vercel.com/storage",
     icon: SiVercel,
