@@ -29,4 +29,18 @@ export const dataApplicationMisc: cardProps[] = [
     url: "https://phase.dev/",
     tags: [".env"],
   },
+  {
+    ...defaultSomeType,
+    id: 5,
+    name: "UseFlytrap",
+    url: "https://www.useflytrap.com/",
+    tags: ["bug", "error", "production"],
+  },
+  {
+    ...defaultSomeType,
+    id: 6,
+    name: "Tinybird",
+    url: "https://www.tinybird.co/",
+    tags: ["database", "data", "api"],
+  },
 ];

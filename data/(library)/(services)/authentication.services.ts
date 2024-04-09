@@ -119,4 +119,11 @@ export const dataAuthentication: cardProps[] = [
     url: "https://feathers-a-m.netlify.app/",
     tags: [],
   },
+  {
+    ...defaultSomeType,
+    id: 11,
+    name: "WorkOS",
+    url: "https://workos.com/",
+    tags: ["sso", "saml", "scim", "ldap", "oauth"],
+  },
 ];
