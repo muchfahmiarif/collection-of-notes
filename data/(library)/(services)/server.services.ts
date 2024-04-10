@@ -116,4 +116,11 @@ export const dataServer: cardProps[] = [
     suggested: false,
     tags: ["api", "workers"],
   },
+  {
+    ...defaultSomeType,
+    id: 10,
+    name: "Pocket Host",
+    url: "https://pockethost.io/",
+    tags: ["backend", "serverless"],
+  },
 ];

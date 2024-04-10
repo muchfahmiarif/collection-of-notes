@@ -121,4 +121,11 @@ export const dataUIComponents: cardProps[] = [
     url: "https://react.keepdesign.io/",
     tags: ["tailwind", "react"],
   },
+  {
+    ...defaultSomeType,
+    id: 18,
+    name: "Park UI",
+    url: "https://park-ui.com/",
+    tags: ["panda", "react"],
+  },
 ];
