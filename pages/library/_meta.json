@@ -24,6 +24,10 @@
   "services-i18n": {
     "title": "I18n"
   },
+  "services-maps": {
+    "title": "Maps"
+  },
+
   "services-monitoring": {
     "title": "Monitoring"
   },
@@ -46,6 +50,10 @@
   "ui-generator": {
     "title": "Generator"
   },
+  "ui-graphics": {
+    "title": "Graphics"
+  },
+
   "ui-icons": {
     "title": "Icons"
   },
